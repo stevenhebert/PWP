@@ -13,7 +13,7 @@
 			<li>purpose: I would like to personal website to showcase my web development skills and professional interests.</li>
 			<li>audience: This webpage is designed for my professional peer group, both to collaborate with other developers and
 				as a presence for my past works.</li>
-			<li>goal(s): I maintain this page with the intention of building a clientele base.</li>
+			<li>goal(s): I maintain this page with the intention of building a clientele base</li>
 
 		</ol>
 
