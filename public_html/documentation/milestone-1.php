@@ -41,7 +41,7 @@
 				iOS and Android devices are most common following with macOS and Windows10, occasionally Gene may test with a linux or
 				windows mobile device. XYZ employs Google Fiber for their broadband connection and Verizon for their mobile connection.</li>
 
-			<li><strong>additional information </strong></li>
+			<li><strong>Additional Information </strong></li>
 
 		</ul>
 
