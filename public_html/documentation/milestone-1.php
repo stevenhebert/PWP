@@ -29,7 +29,6 @@
 				that also understand this barrier. He feels this is especially important for startups, where synergy is vital
 				to their survival.</li>
 			<li>additional information:</li>
-			<li>ADD. INFO)</li>
 
 		</ul>
 
