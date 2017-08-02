@@ -13,7 +13,7 @@
 		<h1>Audience</h1>
 			<ul>
 				<li>Clients</li>
-				<li>Parters</li>
+				<li>Partners</li>
 				<li>Academic peers</li>
 				<li>Family and friends</li>
 
