@@ -43,8 +43,9 @@
 			</li>
 			<li>Resume: Here an integrated? (non-downloadable) resume would be presented. This, in addition to my coding
 				experience would list my other professional experience, skills, and credentials.
-				<li>A nice solid color footing contrasted against the pages background such that it that gently interrupts
-				the users downward scroll, visually informing them that although their viewing is welcomed, the presentation of
+			<li>A nice solid color footing contrasted against the pages background such that it that gently interrupts
+				the users downward scroll, visually informing them that although their viewing is welcomed, the presentation
+				of
 				additional content is no more. To lessen this blow, a "top" anchor makes an appearance anchoring the user
 				back to the pages main-landing.
 			</li>
@@ -52,9 +53,9 @@
 		</ul>
 
 		<h1>Wireframes</h1>
-		<img src="wireframes/mobileWireMS2.png" alt="mobile wireframe"/>
-		<img src="wireframes/desktopWireMS2.png" alt="desktop wireframe"/>
+
+		<img src="public_html/wireframes/mobileWireMS2.png" alt="mobile wireframe"/>
+		<img src="public_html/wireframes/desktopWireMS2.png" alt="desktop wireframe"/>
 
 	</body>
-
 </html>
