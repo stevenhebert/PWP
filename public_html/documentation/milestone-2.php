@@ -7,7 +7,7 @@
 *
 * a wireframe visual accompanies the documentation
 * //wireframes must be, 2mb, .svg | .jpeg | .png | .gif
-*/
+**/
 
 <!DOCTYPE html>
 <html lang="en">
