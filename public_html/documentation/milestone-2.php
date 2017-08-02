@@ -54,9 +54,9 @@
 
 		<h1>Wireframes</h1>
 
-		<img src="public_html/wireframes/desktopWireMS2.png" alt="mobile wireframe"/>
+		<img src="wireframes/mobileWireMS2.png" alt="mobile wireframe" width="1000"/>
 
-		<img src="public_html/pwp/public_html/wireframes/desktopWireMS2.png" alt="desktop wireframe"/>
+		<img src="wireframes/desktopWireMS2.png" alt="desktop wireframe" width="1000"/>
 
 	</body>
 </html>
