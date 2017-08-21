@@ -60,171 +60,177 @@
 			<div class="sfooter-content">
 
 				<!-- header -->
-				<header>
-					<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
-						<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-								  data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-								  aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
+				<div class="container">
+					<header>
+						<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+							<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+									  data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+									  aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
 
-						<a class="navbar-brand" href="#">Steven Hebert</a>
-						<div class="collapse navbar-collapse" id="navbarNavDropdown">
-							<ul class="navbar-nav">
-								<li class="nav-item active">
-									<a class="nav-link" href="#">about<span class="sr-only">(current)</span></a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">portfolio</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">contact</a>
-								</li>
-							</ul>
-						</div>
-					</nav>
-				</header>
+							<a class="navbar-brand" href="#">Steven Hebert</a>
+							<div class="collapse navbar-collapse" id="navbarNavDropdown">
+								<ul class="navbar-nav">
+									<li class="nav-item active">
+										<a class="nav-link" href="#">about<span class="sr-only">(current)</span></a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">portfolio</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">contact</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</header>
+				</div>
 
 				<!-- main -->
-				<div id="about" class="carousel slide" data-ride="carousel">
-					<ol class="carousel-indicators">
-						<li data-target="#myCarousel" data-slide-to="0" class=""></li>
-						<li data-target="#myCarousel" data-slide-to="1" class=""></li>
-						<li data-target="#myCarousel" data-slide-to="2" class="active"></li>
-					</ol>
-					<div class="carousel-inner" role="listbox">
-						<div class="carousel-item">
-							<img class="first-slide"
-								  src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
-								  alt="First slide">
-							<div class="container">
-								<div class="carousel-caption d-none d-md-block text-left">
-									<h1>Example headline.</h1>
-									<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-										gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-									<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+				<div class="container.fluid">
+					<div id="about" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class=""></li>
+							<li data-target="#myCarousel" data-slide-to="1" class=""></li>
+							<li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+						</ol>
+						<div class="carousel-inner" role="listbox">
+							<div class="carousel-item">
+								<img class="first-slide"
+									  src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+									  alt="First slide">
+								<div class="container">
+									<div class="carousel-caption d-none d-md-block text-left">
+										<h1>Example headline.</h1>
+										<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+											gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+										<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img class="second-slide"
+									  src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+									  alt="Second slide">
+								<div class="container">
+									<div class="carousel-caption d-none d-md-block">
+										<h1>Another example headline.</h1>
+										<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+											gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+										<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item active">
+								<img class="third-slide"
+									  src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+									  alt="Third slide">
+								<div class="container">
+									<div class="carousel-caption d-none d-md-block text-right">
+										<h1>One more for good measure.</h1>
+										<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+											gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+										<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="carousel-item">
-							<img class="second-slide"
-								  src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
-								  alt="Second slide">
-							<div class="container">
-								<div class="carousel-caption d-none d-md-block">
-									<h1>Another example headline.</h1>
-									<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-										gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-									<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-								</div>
-							</div>
-						</div>
-						<div class="carousel-item active">
-							<img class="third-slide"
-								  src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
-								  alt="Third slide">
-							<div class="container">
-								<div class="carousel-caption d-none d-md-block text-right">
-									<h1>One more for good measure.</h1>
-									<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-										gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-									<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
-					</a>
-				</div>
-
-				<div id="portfolio" class="album text-muted">
-					<div class="container">
-						<div class="row">
-							<div class="card">
-								<img data-src="holder.js/100px280/thumb" alt="100%x280" src="WATWATWAT"
-									  data-holder-rendered="true" style="height: 280px; width: 100%; display: block;">
-								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-									additional content. This content is a little bit longer.</p>
-							</div>
-							<div class="card">
-								<img data-src="holder.js/100px280/thumb" alt="100%x280" src="WATWATWA"
-									  data-holder-rendered="true" style="height: 280px; width: 100%; display: block;">
-								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-									additional content. This content is a little bit longer.</p>
-							</div>
-							<div class="card">
-								<img data-src="holder.js/100px280/thumb" alt="100%x280" src="WATWATWA"
-									  data-holder-rendered="true" style="height: 280px; width: 100%; display: block;">
-								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-									additional content. This content is a little bit longer.</p>
-							</div>
-							<div class="card">
-								<img data-src="holder.js/100px280/thumb" alt="100%x280" src="WATWATWA"
-									  data-holder-rendered="true" style="height: 280px; width: 100%; display: block;">
-								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-									additional content. This content is a little bit longer.</p>
-							</div>
-						</div>
-
+						<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
 					</div>
 				</div>
 
-				<div id="contact">
-					<form class="form-horizontal well" action="email.php">
-						<div class="form-group">
-							<label for="name">Name</label>
-							<div class="input-group">
-								<div class="input-group-addon">
-									<i class="fa fa-user" aria-hidden="true"></i>
-								</div>
-								<input type="text" class="form-control" id="name" name="name" placeholder="Name">
+				<div class="container">
+					<div id="portfolio" class="row">
+						<div class="col-lg-6">
+							<div class="card">
+								<img src="https://placeimg.com/640/480/any/sepia" alt="catt"/>
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+									additional content. This content is a little bit longer.</p>
+							</div>
+							<div class="card">
+								<img src="https://placeimg.com/640/480/any/sepia" alt="catt"/>
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+									additional content. This content is a little bit longer.</p>
 							</div>
 						</div>
-						<div class="form-group">
-							<label for="email">Email address</label>
-							<div class="input-group">
-								<div class="input-group-addon">
-									<i class="fa fa-envelope" aria-hidden="true"></i>
-								</div>
-								<input type="email" class="form-control" id="email" name="email" placeholder="Email">
+					</div>
+					<div id="portfolio" class="row">
+						<div class="col-lg-6">
+							<div class="card">
+								<img src="https://placeimg.com/640/480/any/sepia" alt="catt"/>
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+									additional content. This content is a little bit longer.</p>
+							</div>
+							<div class="card">
+								<img src="https://placeimg.com/640/480/any/sepia" alt="catt"/>
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+									additional content. This content is a little bit longer.</p>
 							</div>
 						</div>
-						<div class="form-group">
-							<label for="subject">Subject</label>
-							<div class="input-group">
-								<div class="input-group-addon">
-									<i class="fa fa-pencil" aria-hidden="true"></i>
+					</div>
+				</div>
+
+				<div class="container">
+					<div id="contact">
+						<form class="form-horizontal well" action="email.php">
+							<div class="form-group">
+								<label for="name">Name</label>
+								<div class="input-group">
+									<div class="input-group-addon">
+										<i class="fa fa-user" aria-hidden="true"></i>
+									</div>
+									<input type="text" class="form-control" id="name" name="name" placeholder="Name">
 								</div>
-								<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
 							</div>
-						</div>
-						<div class="form-group">
-							<label for="message">Message</label>
-							<div class="input-group">
-								<div class="input-group-addon">
-									<i class="fa fa-comment" aria-hidden="true"></i>
+							<div class="form-group">
+								<label for="email">Email address</label>
+								<div class="input-group">
+									<div class="input-group-addon">
+										<i class="fa fa-envelope" aria-hidden="true"></i>
+									</div>
+									<input type="email" class="form-control" id="email" name="email" placeholder="Email">
 								</div>
-								<textarea class="form-control" rows="5" id="message" name="message"
-											 placeholder="Message"></textarea>
 							</div>
-						</div>
-						<button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
-						<button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>
-					</form>
+							<div class="form-group">
+								<label for="subject">Subject</label>
+								<div class="input-group">
+									<div class="input-group-addon">
+										<i class="fa fa-pencil" aria-hidden="true"></i>
+									</div>
+									<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="message">Message</label>
+								<div class="input-group">
+									<div class="input-group-addon">
+										<i class="fa fa-comment" aria-hidden="true"></i>
+									</div>
+									<textarea class="form-control" rows="5" id="message" name="message"
+												 placeholder="Message"></textarea>
+								</div>
+							</div>
+							<button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
+							<button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>
+						</form>
+					</div>
 				</div>
 
 				<!-- footer -->
-				<footer class="footer">
-					<div class="container">
-						<span class="text-muted">Place sticky footer content here.</span>
-					</div>
-				</footer>
+				<div class="container.fluid">
+					<footer class="footer">
+						<span class="text-muted">designed by steven</span>
+					</footer>
+				</div>
+
 
 			</div>
 		</div>
