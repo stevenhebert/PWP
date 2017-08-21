@@ -1,7 +1,4 @@
-/**
-* Clark, Keith . "Pure CSS Parallax Websites." Pure CSS Parallax Websites . August 25, 2014. Accessed August 04, 2017 http://keithclark.co.uk/articles/pure-css-parallax-websites/. edited: 25 February 2015 -->
-*
-**/
+<!-- Clark, Keith . "Pure CSS Parallax Websites." Pure CSS Parallax Websites . August 25, 2014. Accessed August 04, 2017 http://keithclark.co.uk/articles/pure-css-parallax-websites/. edited: 25 February 2015 -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -106,7 +103,7 @@
 
 </html>
 
-<?php
+<!--
 $zindex - dropdown - backdrop:  990 !default;
 $zindex - navbar:            1000 !default;
 $zindex - dropdown:          1000 !default;
@@ -116,5 +113,5 @@ $zindex - modal - backdrop:    1040 !default;
 $zindex - modal:             1050 !default;
 $zindex - popover:           1060 !default;
 $zindex - tooltip:           1070 !default;
-?>
+-->
 
