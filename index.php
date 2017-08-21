@@ -45,73 +45,113 @@
 	</head>
 
 
-	<sfooter>
-		<div class="container">
-			<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
-				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-						  data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-						  aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+	<body>
+		<div class="sfooter">
+			<div class="sfooter-content">
 
-				<a class="navbar-brand" href="#">Steven Hebert</a>
-				<div class="collapse navbar-collapse" id="navbarNavDropdown">
-					<ul class="navbar-nav">
-						<li class="nav-item active">
-							<a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Code</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Contact</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
-								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Dropdown link
-							</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								<a class="dropdown-item" href="#">Action</a>
-								<a class="dropdown-item" href="#">Another action</a>
-								<a class="dropdown-item" href="#">Something else here</a>
+				<!-- header -->
+				<header>
+					<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+						<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+								  data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+								  aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<a class="navbar-brand" href="#">Steven Hebert</a>
+						<div class="collapse navbar-collapse" id="navbarNavDropdown">
+							<ul class="navbar-nav">
+								<li class="nav-item active">
+									<a class="nav-link" href="#">about<span class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">portfolio</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">contact</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+										data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Dropdown link
+									</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+										<a class="dropdown-item" href="#">Something else here</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</header>
+
+				<!-- main -->
+				<div class="slides">
+					<div class="slide" id="slide-1">
+						<div class="slide__bg"></div>
+						<div class="slide__content">
+							<div class="slide__text">
+								<h1 id="slide-1-title">home</h1>
+								<p></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="slide" id="slide-2">
+						<div class="slide__bg"></div>
+						<div class="slide__content">
+							<div class="slide__text">
+								<h1 id="slide-2-title">about</h1>
+								<p>interests</p>
+								<p>career</p>
+								<p>randoma</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="slide" id="slide-3">
+						<div class="slide__bg"></div>
+						<div class="slide__content">
+							<div class="slide__text">
+								<h1 id="slide-3-title">portfolio</h1>
+								<p>Bacon ipsum dolor amet alcatra beef meatloaf brisket beef ribs meatball tenderloin shank ball
+									tip ribeye pig pastrami filet mignon. Sirloin tail fatback venison shank salami. Picanha
+									pastrami venison meatball kevin pork chop leberkas. Meatloaf tenderloin leberkas pancetta
+									hamburger cow kielbasa, filet mignon tri-tip beef ribs.</p>
+							</div>
+							<div class="slide__image">
+								<img src="img.jpg" alt="image goes here" width="400px">
+							</div>
+						</div>
+					</div>
+
+					<div class="slide" id="slide-4">
+						<div class="slide__bg"></div>
+						<div class="slide__content">
+							<div class="slide__text">
+								<h1 id="slide-4-title">contact</h1>
+
+
+
+
 
 							</div>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</div>
+						</div>
+					</div>
 
-
-		<div class="parallax">
-			<div class="parallax__group">
-				<div class="parallax__layer parallax__layer--back">
-					...
 				</div>
 
-				<div class="parallax__layer parallax__layer--base">
-					...
-				</div>
-			</div>
-			<div class="parallax__group">
-				...
+				<!-- footer -->
+				<footer class="footer">
+					<div class="container">
+						<span class="text-muted">Place sticky footer content here.</span>
+					</div>
+				</footer>
+
 			</div>
 		</div>
-	</sfooter>
-
-
+	</body>
 </html>
 
-<!--
-$zindex - dropdown - backdrop:  990 !default;
-$zindex - navbar:            1000 !default;
-$zindex - dropdown:          1000 !default;
-$zindex - fixed:             1030 !default;
-$zindex - sticky:            1030 !default;
-$zindex - modal - backdrop:    1040 !default;
-$zindex - modal:             1050 !default;
-$zindex - popover:           1060 !default;
-$zindex - tooltip:           1070 !default;
--->
 
