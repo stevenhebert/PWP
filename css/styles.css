@@ -1,13 +1,12 @@
 /* Global CSS
 -------------------------------------------------- */
 .container {
-	 position: relative;
-	 margin-left: auto;
-	 margin-right: auto;
-	 padding-right: 15px;
-	 padding-left: 15px
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 15px;
+	padding-left: 15px
 }
-
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -30,13 +29,13 @@
 	}
 }
 
-
 /* About Stuff
 -------------------------------------------------- */
 /* Carousel base class */
 .carousel {
 	margin-bottom: 4rem;
 }
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
 	z-index: 10;
@@ -46,8 +45,9 @@
 /* Declare heights because of positioning of img element */
 .carousel-item {
 	height: 32rem;
-	background-color: #777;
+	background-color: purple;
 }
+
 .carousel-item > img {
 	position: absolute;
 	top: 0;
@@ -56,23 +56,17 @@
 	height: 32rem;
 }
 
-
 /* Portfolio Stuff
 -------------------------------------------------- */
-.col-md-6{
-	width: 80%;
-}
 
 .album {
-	min-height: 50rem; /* Can be removed; just added for demo purposes */
+	min-height: 50rem;
 	padding-top: 3rem;
 	padding-bottom: 3rem;
-	background-color: #f7f7f7;
+	background-color: orange;
 }
 
 .card {
-	float: left;
-	width: 33.333%;
 	padding: .75rem;
 	margin-bottom: 2rem;
 	border: 0;
@@ -86,13 +80,11 @@
 	font-size: 85%;
 }
 
-
 /* Form Stuff
 -------------------------------------------------- */
 form {
 
 }
-
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -113,5 +105,5 @@ body {
 	width: 100%;
 	height: 60px;
 	line-height: 60px;
-	background-color: black;
+	background-color: green;
 }
