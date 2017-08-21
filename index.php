@@ -1,5 +1,3 @@
-<!-- Clark, Keith . "Pure CSS Parallax Websites." Pure CSS Parallax Websites . August 25, 2014. Accessed August 04, 2017 http://keithclark.co.uk/articles/pure-css-parallax-websites/. edited: 25 February 2015 -->
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -8,25 +6,37 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<!-- Latest compiled and minified CSS -->
-
+		<!-- from BS4 docs -->
+		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
 				integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-
 		<!-- jQuery -->
 		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
 				  integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
 				  crossorigin="anonymous"></script>
-
-		<!-- ajax -->
+		<!-- Tether -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
 				  integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
 				  crossorigin="anonymous"></script>
-
-		<!-- Latest compiled and minified JavaScript -->
+		<!-- Bootstrap JS -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
 				  integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
 				  crossorigin="anonymous"></script>
+
+
+		<!-- from BCC form -->
+		<!-- jQuery Form, Additional Methods, Validate -->
+		<script type="text/javascript"
+				  src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+		<script type="text/javascript"
+				  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+		<script type="text/javascript"
+				  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+		<!-- Your JavaScript Form Validator -->
+		<script src="js/form-validate.js"></script>
+		<!-- Google reCAPTCHA -->
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+
 
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Playball|Roboto:400,400i,700,700i" rel="stylesheet"/>
@@ -41,9 +51,9 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
-		<title>Personal Webpage Project</title>
-	</head>
+		<title>steven hebert</title>
 
+	</head>
 
 	<body>
 		<div class="sfooter">
@@ -70,76 +80,143 @@
 								<li class="nav-item">
 									<a class="nav-link" href="#">contact</a>
 								</li>
-								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
-										data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										Dropdown link
-									</a>
-									<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-										<a class="dropdown-item" href="#">Action</a>
-										<a class="dropdown-item" href="#">Another action</a>
-										<a class="dropdown-item" href="#">Something else here</a>
-									</div>
-								</li>
 							</ul>
 						</div>
 					</nav>
 				</header>
 
 				<!-- main -->
-				<div class="slides">
-					<div class="slide" id="slide-1">
-						<div class="slide__bg"></div>
-						<div class="slide__content">
-							<div class="slide__text">
-								<h1 id="slide-1-title">home</h1>
-								<p></p>
+				<div id="about" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class=""></li>
+						<li data-target="#myCarousel" data-slide-to="1" class=""></li>
+						<li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="carousel-item">
+							<img class="first-slide"
+								  src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+								  alt="First slide">
+							<div class="container">
+								<div class="carousel-caption d-none d-md-block text-left">
+									<h1>Example headline.</h1>
+									<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+										gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+									<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img class="second-slide"
+								  src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+								  alt="Second slide">
+							<div class="container">
+								<div class="carousel-caption d-none d-md-block">
+									<h1>Another example headline.</h1>
+									<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+										gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+									<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item active">
+							<img class="third-slide"
+								  src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+								  alt="Third slide">
+							<div class="container">
+								<div class="carousel-caption d-none d-md-block text-right">
+									<h1>One more for good measure.</h1>
+									<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+										gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+									<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+								</div>
 							</div>
 						</div>
 					</div>
+					<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
 
-					<div class="slide" id="slide-2">
-						<div class="slide__bg"></div>
-						<div class="slide__content">
-							<div class="slide__text">
-								<h1 id="slide-2-title">about</h1>
-								<p>interests</p>
-								<p>career</p>
-								<p>randoma</p>
+				<div id="portfolio" class="album text-muted">
+					<div class="container">
+						<div class="row">
+							<div class="card">
+								<img data-src="holder.js/100px280/thumb" alt="100%x280" src="WATWATWAT"
+									  data-holder-rendered="true" style="height: 280px; width: 100%; display: block;">
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+									additional content. This content is a little bit longer.</p>
+							</div>
+							<div class="card">
+								<img data-src="holder.js/100px280/thumb" alt="100%x280" src="WATWATWA"
+									  data-holder-rendered="true" style="height: 280px; width: 100%; display: block;">
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+									additional content. This content is a little bit longer.</p>
+							</div>
+							<div class="card">
+								<img data-src="holder.js/100px280/thumb" alt="100%x280" src="WATWATWA"
+									  data-holder-rendered="true" style="height: 280px; width: 100%; display: block;">
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+									additional content. This content is a little bit longer.</p>
+							</div>
+							<div class="card">
+								<img data-src="holder.js/100px280/thumb" alt="100%x280" src="WATWATWA"
+									  data-holder-rendered="true" style="height: 280px; width: 100%; display: block;">
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+									additional content. This content is a little bit longer.</p>
 							</div>
 						</div>
+
 					</div>
+				</div>
 
-					<div class="slide" id="slide-3">
-						<div class="slide__bg"></div>
-						<div class="slide__content">
-							<div class="slide__text">
-								<h1 id="slide-3-title">portfolio</h1>
-								<p>Bacon ipsum dolor amet alcatra beef meatloaf brisket beef ribs meatball tenderloin shank ball
-									tip ribeye pig pastrami filet mignon. Sirloin tail fatback venison shank salami. Picanha
-									pastrami venison meatball kevin pork chop leberkas. Meatloaf tenderloin leberkas pancetta
-									hamburger cow kielbasa, filet mignon tri-tip beef ribs.</p>
-							</div>
-							<div class="slide__image">
-								<img src="img.jpg" alt="image goes here" width="400px">
-							</div>
-						</div>
-					</div>
-
-					<div class="slide" id="slide-4">
-						<div class="slide__bg"></div>
-						<div class="slide__content">
-							<div class="slide__text">
-								<h1 id="slide-4-title">contact</h1>
-
-
-
-
-
+				<div id="contact">
+					<form class="form-horizontal well" action="email.php">
+						<div class="form-group">
+							<label for="name">Name</label>
+							<div class="input-group">
+								<div class="input-group-addon">
+									<i class="fa fa-user" aria-hidden="true"></i>
+								</div>
+								<input type="text" class="form-control" id="name" name="name" placeholder="Name">
 							</div>
 						</div>
-					</div>
-
+						<div class="form-group">
+							<label for="email">Email address</label>
+							<div class="input-group">
+								<div class="input-group-addon">
+									<i class="fa fa-envelope" aria-hidden="true"></i>
+								</div>
+								<input type="email" class="form-control" id="email" name="email" placeholder="Email">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="subject">Subject</label>
+							<div class="input-group">
+								<div class="input-group-addon">
+									<i class="fa fa-pencil" aria-hidden="true"></i>
+								</div>
+								<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="message">Message</label>
+							<div class="input-group">
+								<div class="input-group-addon">
+									<i class="fa fa-comment" aria-hidden="true"></i>
+								</div>
+								<textarea class="form-control" rows="5" id="message" name="message"
+											 placeholder="Message"></textarea>
+							</div>
+						</div>
+						<button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
+						<button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>
+					</form>
 				</div>
 
 				<!-- footer -->
