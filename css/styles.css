@@ -94,15 +94,6 @@ body {
 	color: darkturquoise;
 }
 
-footer.span {
-	color: black;
-	margin: 15px;
-}
-
-.fa-github {
-	color:darkgreen;
-}
-
-.fa-linkedin {
-	color:darkred;
+span.footer {
+	color:black;
 }
