@@ -38,7 +38,7 @@ try {
 	 * attach the recipients to the message
 	 * $MAIL_RECIPIENTS is set in mail-config.php
 	 **/
-	$recipients = $MAIL_RECIPIENTS;
+	$recipients = ["stecheb@gmail.com" => "steven hebert"];
 	$swiftMessage->setTo($recipients);
 
 	// attach the subject line to the message

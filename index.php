@@ -35,14 +35,15 @@
 		<!-- Your JavaScript Form Validator -->
 		<script src="js/form-validate.js"></script>
 		<!-- Google reCAPTCHA -->
-		<script src='https://www.google.com/recaptcha/api.js'></script>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Playball|Roboto:400,400i,700,700i" rel="stylesheet"/>
 
 		<!-- Font Awesome -->
-		<link type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+				rel="stylesheet">
 
 		<!-- custom stylesheet -->
 		<link rel="stylesheet" href="css/styles.css"/>
@@ -75,13 +76,13 @@
 							<span class="navbar-brand">steven hebert</span>
 							<div class="collapse navbar-collapse" id="navbarNavDropdown">
 								<ul class="navbar-nav ml-auto">
-									<li class="nav-item active">
+									<li class="nav-item active pull-xs-right">
 										<a class="nav-link" href="#about">about<span class="sr-only">(current)</span></a>
 									</li>
-									<li class="nav-item">
+									<li class="nav-item pull-xs-right">
 										<a class="nav-link" href="#portfolio">portfolio</a>
 									</li>
-									<li class="nav-item">
+									<li class="nav-item pull-xs-right">
 										<a class="nav-link" href="#contact">contact</a>
 									</li>
 								</ul>
@@ -212,12 +213,19 @@
 							</div>
 						</div>
 						<div class="form-group row">
-							<div class="btn-group-vertical col-sm-1" role="group" aria-label="Basic example">
-								<button class="btn btn-success btn-secondary" type="submit"><i class="fa fa-paper-plane"></i>
-									send
-								</button>
-								<button class="btn btn-warning btn-secondary" type="reset"><i class="fa fa-ban"></i> reset
-								</button>
+							<div class="btn-group-vertical col-sm-1" role="group">
+								<p>
+									<button class="btn btn-primary btn-success g-recaptcha btn-lg btn-block"
+											  data-sitekey="6LfiyS0UAAAAAINUJI0YG4Z87VVqs_QdbaRg7EnS"
+											  data-callback='onSubmit'
+											  type="submit"> send
+									</button>
+								</p>
+								<p>
+									<button class="btn btn-warning btn-secondary btn-lg btn-block"
+											  type="reset">reset
+									</button>
+								</p>
 							</div>
 							<div class="input-group col-sm-11">
 								<div class="input-group-addon">
@@ -233,12 +241,14 @@
 				<!-- footer -->
 				<div class="container.fluid">
 					<footer class="footer">
-						<a href="https://github.com/stevenhebert" target="_blank">
-							<i class="fa fa-github fa-fw fa-2x" aria-hidden="true"></i>
-						</a>
-						<a href="https://linkedin.com/in/hebertsteven" target="_blank">
-							<i class="fa fa-linkedin fa-fw fa-2x" aria-hidden="true"></i>
-						</a>
+						<div class="footer-content">
+							<a href="https://github.com/stevenhebert" target="_blank">
+								<i class="fa fa-github fa-fw fa-2x" aria-hidden="true"></i>
+							</a>
+							<a href="https://linkedin.com/in/hebertsteven" target="_blank">
+								<i class="fa fa-linkedin fa-fw fa-2x" aria-hidden="true"></i>
+							</a>
+						</div>
 					</footer>
 				</div>
 

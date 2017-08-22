@@ -4,17 +4,20 @@
 	.carousel-caption p {
 		margin-bottom: 1.25rem;
 		font-size: 1.25rem;
-		line-height: 1.4;}
+		line-height: 1.4;
+	}
 }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
+@media (min-width: 768px) {
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+}
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+}
 
 /* Navbar Stuff
 -------------------------------------------------- */
@@ -49,10 +52,9 @@
 /* Portfolio Stuff
 -------------------------------------------------- */
 .album {
-	min-height: 50rem;
+	min-height: 35rem;
 	padding-top: 3rem;
 	padding-bottom: 3rem;
-	background-color: orange;
 }
 
 .card {
@@ -94,10 +96,14 @@ body {
 	background-color: darkturquoise;
 }
 
+.footer-content {
+	margin-left: 15px;
+}
+
 .fa-github {
-	color:darkgreen;
+	color: darkgreen;
 }
 
 .fa-linkedin {
-	color:darkred;
+	color: darkred;
 }
