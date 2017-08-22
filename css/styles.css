@@ -1,22 +1,23 @@
 /* Global CSS
 -------------------------------------------------- */
-.container {
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	padding-right: 15px;
-	padding-left: 15px
-}
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-@media (min-width: 40em) {
-	/* Bump up size of carousel content */
+@media (min-width: 576px) {
 	.carousel-caption p {
 		margin-bottom: 1.25rem;
 		font-size: 1.25rem;
-		line-height: 1.4;
-	}
+		line-height: 1.4;}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+/* Navbar Stuff
+-------------------------------------------------- */
 
 
 /* About Stuff
@@ -34,8 +35,7 @@
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-	height: 32rem;
-	background-color: purple;
+	height: 20rem;
 }
 
 .carousel-item > img {
@@ -43,12 +43,11 @@
 	top: 0;
 	left: 0;
 	min-width: 100%;
-	height: 32rem;
+	height: 20rem;
 }
 
 /* Portfolio Stuff
 -------------------------------------------------- */
-
 .album {
 	min-height: 50rem;
 	padding-top: 3rem;
@@ -60,24 +59,18 @@
 	padding: .75rem;
 	margin-bottom: 2rem;
 	border: 0;
-	display: inline-block;
-	float: left;
 }
 
 .card > img {
 	margin-bottom: .75rem;
-	width: auto;
 }
 
 .card-text {
 	font-size: 85%;
 }
 
-/* Form Stuff
+/* Contact Stuff
 -------------------------------------------------- */
-form {
-
-}
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -98,5 +91,13 @@ body {
 	width: 100%;
 	height: 60px;
 	line-height: 60px;
-	background-color: green;
+	background-color: darkturquoise;
+}
+
+.fa-github {
+	color:darkgreen;
+}
+
+.fa-linkedin {
+	color:darkred;
 }
