@@ -69,23 +69,24 @@
 								<span class="navbar-toggler-icon"></span>
 							</button>
 
-							<a class="navbar-brand" href="#">Steven Hebert</a>
+							<a class="navbar-brand" href="#">steven hebert</a>
 							<div class="collapse navbar-collapse" id="navbarNavDropdown">
 								<ul class="navbar-nav">
 									<li class="nav-item active">
-										<a class="nav-link" href="#">about<span class="sr-only">(current)</span></a>
+										<a class="nav-link" href="#about">about<span class="sr-only">(current)</span></a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="#">portfolio</a>
+										<a class="nav-link" href="#portfolio">portfolio</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="#">contact</a>
+										<a class="nav-link" href="#contact">contact</a>
 									</li>
 								</ul>
 							</div>
 						</nav>
 					</header>
 				</div>
+
 
 				<!-- main -->
 				<div class="container.fluid">
@@ -148,86 +149,85 @@
 				</div>
 
 				<div class="container">
+
 					<div id="portfolio" class="row">
-						<div class="col-lg-6">
-							<div class="card">
-								<img src="https://placeimg.com/640/480/any/sepia" alt="catt"/>
+							<div class="card col-sm-6">
+								<img src="https://placeimg.com/640/480/any/sepia" alt="randy"/>
 								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
 									additional content. This content is a little bit longer.</p>
 							</div>
-							<div class="card">
-								<img src="https://placeimg.com/640/480/any/sepia" alt="catt"/>
+						<div class="card col-sm-6">
+								<img src="https://placeimg.com/640/480/any/sepia" alt="randy"/>
 								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
 									additional content. This content is a little bit longer.</p>
 							</div>
 						</div>
-					</div>
+
 					<div id="portfolio" class="row">
-						<div class="col-lg-6">
-							<div class="card">
-								<img src="https://placeimg.com/640/480/any/sepia" alt="catt"/>
-								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-									additional content. This content is a little bit longer.</p>
-							</div>
-							<div class="card">
-								<img src="https://placeimg.com/640/480/any/sepia" alt="catt"/>
-								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-									additional content. This content is a little bit longer.</p>
-							</div>
+						<div class="card col-sm-6">
+							<img src="https://placeimg.com/640/480/any/sepia" alt="randy"/>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+								additional content. This content is a little bit longer.</p>
+						</div>
+						<div class="card col-sm-6">
+							<img src="https://placeimg.com/640/480/any/sepia" alt="randy"/>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+								additional content. This content is a little bit longer.</p>
 						</div>
 					</div>
+
 				</div>
 
 				<div class="container">
-					<div id="contact">
-						<form class="form-horizontal well" action="email.php">
-							<div class="form-group">
-								<label for="name">Name</label>
-								<div class="input-group">
+
+						<form id="contact" action="php/mailer.php">
+							<div class="form-group row">
+								<label for="name" class="col-sm-1 col-form-label">name</label>
+								<div class="input-group col-sm-11">
 									<div class="input-group-addon">
 										<i class="fa fa-user" aria-hidden="true"></i>
 									</div>
-									<input type="text" class="form-control" id="name" name="name" placeholder="Name">
+									<input type="text" class="form-control" id="name" name="name" placeholder="name">
 								</div>
 							</div>
-							<div class="form-group">
-								<label for="email">Email address</label>
-								<div class="input-group">
+							<div class="form-group row">
+								<label for="email" class="col-sm-1 col-form-label">email</label>
+								<div class="input-group col-sm-11">
 									<div class="input-group-addon">
 										<i class="fa fa-envelope" aria-hidden="true"></i>
 									</div>
-									<input type="email" class="form-control" id="email" name="email" placeholder="Email">
+									<input type="email" class="form-control" id="email" name="email" placeholder="email">
 								</div>
 							</div>
-							<div class="form-group">
-								<label for="subject">Subject</label>
-								<div class="input-group">
+							<div class="form-group row">
+								<label for="subject" class="col-sm-1 col-form-label">subject</label>
+								<div class="input-group col-sm-11">
 									<div class="input-group-addon">
 										<i class="fa fa-pencil" aria-hidden="true"></i>
 									</div>
-									<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+									<input type="text" class="form-control" id="subject" name="subject" placeholder="subject">
 								</div>
 							</div>
-							<div class="form-group">
-								<label for="message">Message</label>
-								<div class="input-group">
+							<div class="form-group row">
+								<div class="btn-group-vertical col-sm-1" role="group" aria-label="Basic example">
+									<button class="btn btn-success btn-secondary" type="submit"><i class="fa fa-paper-plane"></i> send</button>
+									<button class="btn btn-warning btn-secondary" type="reset"><i class="fa fa-ban"></i> reset</button>
+								</div>
+								<div class="input-group col-sm-11">
 									<div class="input-group-addon">
 										<i class="fa fa-comment" aria-hidden="true"></i>
 									</div>
-									<textarea class="form-control" rows="5" id="message" name="message"
+									<textarea class="form-control" rows="4" id="message" name="message"
 												 placeholder="Message"></textarea>
 								</div>
 							</div>
-							<button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
-							<button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>
 						</form>
-					</div>
 				</div>
 
 				<!-- footer -->
 				<div class="container.fluid">
 					<footer class="footer">
-						<span class="text-muted">designed by steven</span>
+						<span>designed by steven</span>
 					</footer>
 				</div>
 
