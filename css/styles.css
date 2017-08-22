@@ -91,9 +91,13 @@ body {
 	width: 100%;
 	height: 60px;
 	line-height: 60px;
-	color: darkturquoise;
+	background-color: darkturquoise;
 }
 
-span.footer {
-	color:black;
+.fa-github {
+	color:darkgreen;
+}
+
+.fa-linkedin {
+	color:darkred;
 }

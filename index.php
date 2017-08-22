@@ -233,14 +233,12 @@
 				<!-- footer -->
 				<div class="container.fluid">
 					<footer class="footer">
-								<a href="https://github.com/stevenhebert" target="_blank">
-									<i class="fa fa-github fa-fw fa-2x" aria-hidden="true"></i>
-								</a>
-								<a href="https://linkedin.com/in/hebertsteven" target="_blank">
-									<i class="fa fa-linkedin fa-fw fa-2x" aria-hidden="true"></i>
-								</a>
-								<a>resume
-								</a>
+							<a href="https://github.com/stevenhebert" target="_blank">
+								<i class="fa fa-github fa-fw fa-2x" aria-hidden="true"></i>
+							</a>
+							<a href="https://linkedin.com/in/hebertsteven" target="_blank">
+								<i class="fa fa-linkedin fa-fw fa-2x" aria-hidden="true"></i>
+							</a>
 					</footer>
 				</div>
 
