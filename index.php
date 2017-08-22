@@ -41,6 +41,9 @@
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Playball|Roboto:400,400i,700,700i" rel="stylesheet"/>
 
+		<!-- Font Awesome -->
+		<link type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
 		<!-- custom stylesheet -->
 		<link rel="stylesheet" href="css/styles.css"/>
 
@@ -60,7 +63,7 @@
 			<div class="sfooter-content">
 
 				<!-- header -->
-				<div class="container">
+				<div class="container.fluid">
 					<header>
 						<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
 							<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
@@ -69,23 +72,24 @@
 								<span class="navbar-toggler-icon"></span>
 							</button>
 
-							<a class="navbar-brand" href="#">Steven Hebert</a>
+							<span class="navbar-brand">steven hebert</span>
 							<div class="collapse navbar-collapse" id="navbarNavDropdown">
-								<ul class="navbar-nav">
+								<ul class="navbar-nav ml-auto">
 									<li class="nav-item active">
-										<a class="nav-link" href="#">about<span class="sr-only">(current)</span></a>
+										<a class="nav-link" href="#about">about<span class="sr-only">(current)</span></a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="#">portfolio</a>
+										<a class="nav-link" href="#portfolio">portfolio</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="#">contact</a>
+										<a class="nav-link" href="#contact">contact</a>
 									</li>
 								</ul>
 							</div>
 						</nav>
 					</header>
 				</div>
+
 
 				<!-- main -->
 				<div class="container.fluid">
@@ -148,93 +152,98 @@
 				</div>
 
 				<div class="container">
+
 					<div id="portfolio" class="row">
-						<div class="col-lg-6">
-							<div class="card">
-								<img src="https://placeimg.com/640/480/any/sepia" alt="catt"/>
-								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-									additional content. This content is a little bit longer.</p>
-							</div>
-							<div class="card">
-								<img src="https://placeimg.com/640/480/any/sepia" alt="catt"/>
-								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-									additional content. This content is a little bit longer.</p>
-							</div>
+						<div class="card col-sm-6">
+							<img src="https://placeimg.com/640/480/any/sepia" alt="randy"/>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+								additional content. This content is a little bit longer.</p>
+						</div>
+						<div class="card col-sm-6">
+							<img src="https://placeimg.com/640/480/any/sepia" alt="randy"/>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+								additional content. This content is a little bit longer.</p>
 						</div>
 					</div>
+
 					<div id="portfolio" class="row">
-						<div class="col-lg-6">
-							<div class="card">
-								<img src="https://placeimg.com/640/480/any/sepia" alt="catt"/>
-								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-									additional content. This content is a little bit longer.</p>
-							</div>
-							<div class="card">
-								<img src="https://placeimg.com/640/480/any/sepia" alt="catt"/>
-								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-									additional content. This content is a little bit longer.</p>
-							</div>
+						<div class="card col-sm-6">
+							<img src="https://placeimg.com/640/480/any/sepia" alt="randy"/>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+								additional content. This content is a little bit longer.</p>
+						</div>
+						<div class="card col-sm-6">
+							<img src="https://placeimg.com/640/480/any/sepia" alt="randy"/>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+								additional content. This content is a little bit longer.</p>
 						</div>
 					</div>
+
 				</div>
 
 				<div class="container">
-					<div id="contact">
-						<form class="form-horizontal well" action="email.php">
-							<div class="form-group">
-								<label for="name">Name</label>
-								<div class="input-group">
-									<div class="input-group-addon">
-										<i class="fa fa-user" aria-hidden="true"></i>
-									</div>
-									<input type="text" class="form-control" id="name" name="name" placeholder="Name">
+
+					<form id="contact" action="php/mailer.php">
+						<div class="form-group row">
+							<label for="name" class="col-sm-1 col-form-label">name</label>
+							<div class="input-group col-sm-11">
+								<div class="input-group-addon">
+									<i class="fa fa-user" aria-hidden="true"></i>
 								</div>
+								<input type="text" class="form-control" id="name" name="name" placeholder="name">
 							</div>
-							<div class="form-group">
-								<label for="email">Email address</label>
-								<div class="input-group">
-									<div class="input-group-addon">
-										<i class="fa fa-envelope" aria-hidden="true"></i>
-									</div>
-									<input type="email" class="form-control" id="email" name="email" placeholder="Email">
+						</div>
+						<div class="form-group row">
+							<label for="email" class="col-sm-1 col-form-label">email</label>
+							<div class="input-group col-sm-11">
+								<div class="input-group-addon">
+									<i class="fa fa-envelope" aria-hidden="true"></i>
 								</div>
+								<input type="email" class="form-control" id="email" name="email" placeholder="email">
 							</div>
-							<div class="form-group">
-								<label for="subject">Subject</label>
-								<div class="input-group">
-									<div class="input-group-addon">
-										<i class="fa fa-pencil" aria-hidden="true"></i>
-									</div>
-									<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+						</div>
+						<div class="form-group row">
+							<label for="subject" class="col-sm-1 col-form-label">subject</label>
+							<div class="input-group col-sm-11">
+								<div class="input-group-addon">
+									<i class="fa fa-pencil" aria-hidden="true"></i>
 								</div>
+								<input type="text" class="form-control" id="subject" name="subject" placeholder="subject">
 							</div>
-							<div class="form-group">
-								<label for="message">Message</label>
-								<div class="input-group">
-									<div class="input-group-addon">
-										<i class="fa fa-comment" aria-hidden="true"></i>
-									</div>
-									<textarea class="form-control" rows="5" id="message" name="message"
-												 placeholder="Message"></textarea>
+						</div>
+						<div class="form-group row">
+							<div class="btn-group-vertical col-sm-1" role="group" aria-label="Basic example">
+								<button class="btn btn-success btn-secondary" type="submit"><i class="fa fa-paper-plane"></i>
+									send
+								</button>
+								<button class="btn btn-warning btn-secondary" type="reset"><i class="fa fa-ban"></i> reset
+								</button>
+							</div>
+							<div class="input-group col-sm-11">
+								<div class="input-group-addon">
+									<i class="fa fa-comment" aria-hidden="true"></i>
 								</div>
+								<textarea class="form-control" rows="4" id="message" name="message"
+											 placeholder="message"></textarea>
 							</div>
-							<button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
-							<button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>
-						</form>
-					</div>
+						</div>
+					</form>
 				</div>
 
 				<!-- footer -->
 				<div class="container.fluid">
 					<footer class="footer">
-						<span class="text-muted">designed by steven</span>
+						<a href="https://github.com/stevenhebert" target="_blank">
+							<i class="fa fa-github fa-fw fa-2x" aria-hidden="true"></i>
+						</a>
+						<a href="https://linkedin.com/in/hebertsteven" target="_blank">
+							<i class="fa fa-linkedin fa-fw fa-2x" aria-hidden="true"></i>
+						</a>
 					</footer>
 				</div>
-
 
 			</div>
 		</div>
 	</body>
 </html>
-
 

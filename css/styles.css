@@ -18,16 +18,6 @@
 		line-height: 1.4;
 	}
 
-	.featurette-heading {
-		font-size: 50px;
-	}
-}
-
-@media (min-width: 62em) {
-	.featurette-heading {
-		margin-top: 7rem;
-	}
-}
 
 /* About Stuff
 -------------------------------------------------- */
@@ -70,10 +60,13 @@
 	padding: .75rem;
 	margin-bottom: 2rem;
 	border: 0;
+	display: inline-block;
+	float: left;
 }
 
 .card > img {
 	margin-bottom: .75rem;
+	width: auto;
 }
 
 .card-text {
