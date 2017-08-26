@@ -59,9 +59,7 @@
 
 	</head>
 
-	<body>
-		<div class="sfooter">
-			<div class="sfooter-content">
+	<body class="site">
 
 				<!-- header -->
 				<div class="container.fluid">
@@ -90,7 +88,6 @@
 						</nav>
 					</header>
 				</div>
-
 
 				<!-- main -->
 				<div class="container.fluid">
@@ -153,7 +150,6 @@
 				</div>
 
 				<div class="container">
-
 					<div id="portfolio" class="row">
 						<div class="card col-sm-6">
 							<img src="https://placeimg.com/640/480/any/sepia" alt="randy"/>
@@ -166,7 +162,6 @@
 								additional content. This content is a little bit longer.</p>
 						</div>
 					</div>
-
 					<div id="portfolio" class="row">
 						<div class="card col-sm-6">
 							<img src="https://placeimg.com/640/480/any/sepia" alt="randy"/>
@@ -179,7 +174,6 @@
 								additional content. This content is a little bit longer.</p>
 						</div>
 					</div>
-
 				</div>
 
 				<div class="container">
@@ -252,8 +246,6 @@
 					</footer>
 				</div>
 
-			</div>
-		</div>
 	</body>
 </html>
 
