@@ -47,7 +47,6 @@
 
 		<!-- custom stylesheet -->
 		<link rel="stylesheet" href="css/styless.css"/>
-		<link rel="stylesheet" href="css/stars.css"/>
 
 
 		<!-- HTML5 shim and Respond . js for IE8 support of HTML5 elements and media queries -->
@@ -66,7 +65,7 @@
 <label for="debug">Debug: Transition to </label>
 
 <div class="wrapper">
-  <div class="slides stars">
+  <div class="slides" background="https://bootcamp-coders.cnm.edu/~shebert2/pwp/background">
     <div class="slide">
       <div class="title">Pure CSS z-scrolling</div>
     </div>

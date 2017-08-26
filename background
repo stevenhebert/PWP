@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="Script Tutorials" />
+		<title>Night sky with twinkling stars - CSS3 demo | Script Tutorials</title>
+		<link href="css/background.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<header>
+			<h2>Night sky with twinkling stars - CSS3 demo (<a href="http://www.script-tutorials.com/night-sky-with-twinkling-stars/">Back to original tutorial</a>)</h2>
+		</header>
+
+		<div class="stars"></div>
+		<div class="twinkling"></div>
+		<div class="clouds"></div>
+
+		<!-- Only used for Script Tutorial's Demo site. Please ignore and remove. -->
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="http://www.script-tutorials.com/assets/ads.js" async></script>
+	</body>
+</html>
