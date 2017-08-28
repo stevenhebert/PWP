@@ -61,30 +61,39 @@
 	</head>
 
 
-	<input id="debug" type="checkbox">
-<label for="debug">Debug: Transition to </label>
+	<input id="flat" type="checkbox">
+	<label for="flat">Debug: Transition to </label>
 
-<div class="wrapper">
-  <div class="slides" background="https://bootcamp-coders.cnm.edu/~shebert2/pwp/background">
-    <div class="slide">
-      <div class="title">Pure CSS z-scrolling</div>
-    </div>
-    <div class="slide">
-      <div class="title">Slide 1</div>
-    </div>
-    <div class="slide">
-      <div class="title">Slide 2</div>
-    </div>
-    <div class="slide">
-      <div class="title">Slide 3</div>
-    </div>
-    <div class="slide">
-      <div class="title">Slide 4</div>
-    </div>
-    <div class="slide">
-      <div class="title">Slide 5</div>
-    </div>
-  </div>
-</div>
+	<div class="wrapper">
+		<div class="slides">
+
+			<div class="stars">
+				<div class="twinkling">
+
+					<div class="slide">
+						<div class="title">Pure CSS z-scrolling</div>
+					</div>
+					<div class="slide">
+						<div class="content">Slide 1</div>
+					</div>
+					<div class="slide">
+						<div class="content">Slide 2</div>
+					</div>
+					<div class="slide">
+						<div class="content">Slide 3</div>
+					</div>
+					<div class="slide">
+						<div class="content">Slide 4</div>
+					</div>
+					<div class="slide">
+						<div class="content">Slide 5</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
 
 
