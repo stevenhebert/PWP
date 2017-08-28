@@ -60,10 +60,35 @@
 
 	</head>
 
+	<!-- header -->
+	<div class="container.fluid">
+		<header>
+			<nav class="navbar navbar-toggleable-md">
+				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+						  data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+						  aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-	<input id="flat" type="checkbox">
-	<label for="flat">Debug: Transition to </label>
+				<span class="navbar-brand">steven hebert</span>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active pull-xs-right">
+							<a class="nav-link" href="#about">about<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item pull-xs-right">
+							<a class="nav-link" href="#portfolio">portfolio</a>
+						</li>
+						<li class="nav-item pull-xs-right">
+							<a class="nav-link" href="#contact">contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+	</div>
 
+	<!-- main -->
 	<div class="wrapper">
 		<div class="slides">
 
@@ -71,29 +96,75 @@
 				<div class="twinkling">
 
 					<div class="slide">
-						<div class="title">Pure CSS z-scrolling</div>
+						<div class="content">i don't even like Star Wars that much/intro</div>
 					</div>
 					<div class="slide">
-						<div class="content">Slide 1</div>
+						<div class="content">about/interests/purpose</div>
 					</div>
 					<div class="slide">
-						<div class="content">Slide 2</div>
+						<div class="content">portfolio (finished projects)</div>
 					</div>
 					<div class="slide">
-						<div class="content">Slide 3</div>
+						<div class="content">portfolio (current projects)</div>
 					</div>
 					<div class="slide">
-						<div class="content">Slide 4</div>
-					</div>
-					<div class="slide">
-						<div class="content">Slide 5</div>
+						<div class="container">
 
+							<form id="contact" action="php/mailer.php">contact
+								<div class="form-group row">
+									<div class="input-group col-sm-11">
+										<div class="input-group-addon">
+											<i class="fa fa-user" aria-hidden="true"></i>
+										</div>
+										<input type="text" class="form-control" id="name" name="name" placeholder="name">
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="input-group col-sm-11">
+										<div class="input-group-addon">
+											<i class="fa fa-envelope" aria-hidden="true"></i>
+										</div>
+										<input type="email" class="form-control" id="email" name="email" placeholder="email">
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="input-group col-sm-11">
+										<div class="input-group-addon">
+											<i class="fa fa-pencil" aria-hidden="true"></i>
+										</div>
+										<input type="text" class="form-control" id="subject" name="subject" placeholder="subject">
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="input-group col-sm-11">
+										<div class="input-group-addon">
+											<i class="fa fa-comment" aria-hidden="true"></i>
+										</div>
+										<textarea class="form-control" rows="4" id="message" name="message"
+													 placeholder="message"></textarea>
+									</div>
+									<div class="btn-group col-sm-11" role="group">
+										<button class="btn btn-primary btn-success g-recaptcha btn-md"
+												  data-sitekey="6LfiyS0UAAAAAINUJI0YG4Z87VVqs_QdbaRg7EnS"
+												  data-callback='onSubmit'
+												  type="submit"> send
+										</button>
+										<button class="btn btn-warning btn-secondary btn-md"
+												  type="reset">reset
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
 					</div>
+
 				</div>
-
 			</div>
-		</div>
 
+		</div>
 	</div>
+
+	</html>
+
 
 
