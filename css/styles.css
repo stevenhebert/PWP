@@ -22,7 +22,6 @@
 /* Navbar Stuff
 -------------------------------------------------- */
 
-
 /* About Stuff
 -------------------------------------------------- */
 /* Carousel base class */
@@ -119,14 +118,12 @@ body {
 	flex: none; /* 2 */
 }
 
-
-
-
 .site-content {
 	flex: 1 0 auto; /* 2 */
 	padding: var(--space) var(--space) 0;
 	width: 100%;
 }
+
 .site-content::after {
 	content: '\00a0'; /* &nbsp; */
 	display: block;
@@ -134,10 +131,12 @@ body {
 	height: 0px;
 	visibility: hidden;
 }
+
 @media (--break-lg) {
 	.site-content {
 		padding-top: var(--space-lg);
 	}
+
 	.site-content::after {
 		margin-top: var(--space-lg);
 	}
@@ -146,6 +145,7 @@ body {
 .site-content--full {
 	padding: 0;
 }
+
 .site-content--full::after {
 	content: none;
 }

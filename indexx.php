@@ -105,8 +105,8 @@
 						</div>
 
 						<div class="slide">
-
 								<div class="content">
+
 										<div class="card">
 											<img src="images/ABQTH.png" alt="ABQ Town Hall" width="200px"/>
 											<p> My Deep Dive capstone project. Created to help engage residents in
@@ -121,17 +121,17 @@
 								</div>
 
 						<div class="slide">
-							<div class="container">
+							<div class="content">
 
-								<div class="content">
-									<div id="portfolio" class="row">
-										<div class="card col-sm-6">
-											<img src="https://placeimg.com/640/480/any/sepia" alt="randy" width="200px"/>
-											<p class="card-text">This is a wider card with supporting text below as a natural
-												lead-in to
-												additional content. This content is a little bit longer.</p>
-										</div>
-									</div>
+								<div class="card">
+									<img src="images/ABQTH.png" alt="ABQ Town Hall" width="200px"/>
+									<p> My Deep Dive capstone project. Created to help engage residents in
+										local government. Built with three of my cohort members in ten short weeks on a "LAMP"
+										stack platform. Features abqopen GIS data to help educate and inform city residents.
+										This prototype is modeled around city council districts, however the platform was
+										designed to be scalabler so that it also may model a town hall in different levels of
+										government.
+									</p>
 								</div>
 							</div>
 						</div>
