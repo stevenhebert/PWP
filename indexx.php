@@ -59,112 +59,143 @@
 		<title>steven hebert</title>
 
 	</head>
+	<body class="site">
 
-	<!-- header -->
-	<div class="container.fluid">
-		<header>
-			<nav class="navbar navbar-toggleable-md">
-				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-						  data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-						  aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
 
-				<span class="navbar-brand">steven hebert</span>
-				<div class="collapse navbar-collapse" id="navbarNavDropdown">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item active pull-xs-right">
-							<a class="nav-link" href="#about">about<span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item pull-xs-right">
-							<a class="nav-link" href="#portfolio">portfolio</a>
-						</li>
-						<li class="nav-item pull-xs-right">
-							<a class="nav-link" href="#contact">contact</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</header>
-	</div>
+		<!-- header -->
+		<div class="container.fluid">
+			<header>
+				<nav class="navbar navbar-toggleable-md">
+					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+							  data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+							  aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
-	<!-- main -->
-	<div class="wrapper">
-		<div class="slides">
-
-			<div class="stars">
-				<div class="twinkling">
-
-					<div class="slide">
-						<div class="content">i don't even like Star Wars that much/intro</div>
+					<span class="navbar-brand">steven hebert</span>
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item active pull-xs-right">
+								<a class="nav-link" href="#about">about<span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item pull-xs-right">
+								<a class="nav-link" href="#portfolio">portfolio</a>
+							</li>
+							<li class="nav-item pull-xs-right">
+								<a class="nav-link" href="#contact">contact</a>
+							</li>
+						</ul>
 					</div>
-					<div class="slide">
-						<div class="content">about/interests/purpose</div>
-					</div>
-					<div class="slide">
-						<div class="content">portfolio (finished projects)</div>
-					</div>
-					<div class="slide">
-						<div class="content">portfolio (current projects)</div>
-					</div>
-					<div class="slide">
-						<div class="container">
-
-							<form id="contact" action="php/mailer.php">contact
-								<div class="form-group row">
-									<div class="input-group col-sm-11">
-										<div class="input-group-addon">
-											<i class="fa fa-user" aria-hidden="true"></i>
-										</div>
-										<input type="text" class="form-control" id="name" name="name" placeholder="name">
-									</div>
-								</div>
-								<div class="form-group row">
-									<div class="input-group col-sm-11">
-										<div class="input-group-addon">
-											<i class="fa fa-envelope" aria-hidden="true"></i>
-										</div>
-										<input type="email" class="form-control" id="email" name="email" placeholder="email">
-									</div>
-								</div>
-								<div class="form-group row">
-									<div class="input-group col-sm-11">
-										<div class="input-group-addon">
-											<i class="fa fa-pencil" aria-hidden="true"></i>
-										</div>
-										<input type="text" class="form-control" id="subject" name="subject" placeholder="subject">
-									</div>
-								</div>
-								<div class="form-group row">
-									<div class="input-group col-sm-11">
-										<div class="input-group-addon">
-											<i class="fa fa-comment" aria-hidden="true"></i>
-										</div>
-										<textarea class="form-control" rows="4" id="message" name="message"
-													 placeholder="message"></textarea>
-									</div>
-									<div class="btn-group col-sm-11" role="group">
-										<button class="btn btn-primary btn-success g-recaptcha btn-md"
-												  data-sitekey="6LfiyS0UAAAAAINUJI0YG4Z87VVqs_QdbaRg7EnS"
-												  data-callback='onSubmit'
-												  type="submit"> send
-										</button>
-										<button class="btn btn-warning btn-secondary btn-md"
-												  type="reset">reset
-										</button>
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-
-				</div>
-			</div>
-
+				</nav>
+			</header>
 		</div>
-	</div>
 
-	</html>
+		<!-- main -->
+		<div class="wrapper">
+			<div class="slides">
+
+				<div class="stars">
+					<div class="twinkling">
+
+						<div class="slide">
+							<div class="content">i don't even like Star Wars that much/intro</div>
+						</div>
+						<div class="slide">
+							<div class="content">about/interests/purpose</div>
+						</div>
+
+						<div class="slide">
+
+								<div class="content">
+										<div class="card">
+											<img src="images/ABQTH.png" alt="ABQ Town Hall" width="200px"/>
+											<p> My Deep Dive capstone project. Created to help engage residents in
+												local government. Built with three of my cohort members in ten short weeks on a "LAMP"
+												stack platform. Features abqopen GIS data to help educate and inform city residents.
+												This prototype is modeled around city council districts, however the platform was
+												designed to be scalabler so that it also may model a town hall in different levels of
+												government.
+ 											</p>
+										</div>
+									</div>
+								</div>
+
+						<div class="slide">
+							<div class="container">
+
+								<div class="content">
+									<div id="portfolio" class="row">
+										<div class="card col-sm-6">
+											<img src="https://placeimg.com/640/480/any/sepia" alt="randy" width="200px"/>
+											<p class="card-text">This is a wider card with supporting text below as a natural
+												lead-in to
+												additional content. This content is a little bit longer.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="slide">
+							<div class="container">
+
+								<form id="contact" action="php/mailer.php">contact
+									<div class="form-group row">
+										<div class="input-group col-sm-11">
+											<div class="input-group-addon">
+												<i class="fa fa-user" aria-hidden="true"></i>
+											</div>
+											<input type="text" class="form-control" id="name" name="name" placeholder="name">
+										</div>
+									</div>
+									<div class="form-group row">
+										<div class="input-group col-sm-11">
+											<div class="input-group-addon">
+												<i class="fa fa-envelope" aria-hidden="true"></i>
+											</div>
+											<input type="email" class="form-control" id="email" name="email" placeholder="email">
+										</div>
+									</div>
+									<div class="form-group row">
+										<div class="input-group col-sm-11">
+											<div class="input-group-addon">
+												<i class="fa fa-pencil" aria-hidden="true"></i>
+											</div>
+											<input type="text" class="form-control" id="subject" name="subject"
+													 placeholder="subject">
+										</div>
+									</div>
+									<div class="form-group row">
+										<div class="input-group col-sm-11">
+											<div class="input-group-addon">
+												<i class="fa fa-comment" aria-hidden="true"></i>
+											</div>
+											<textarea class="form-control" rows="4" id="message" name="message"
+														 placeholder="message"></textarea>
+										</div>
+										<div class="btn-group col-sm-11" role="group">
+											<button class="btn btn-primary btn-success g-recaptcha btn-md"
+													  data-sitekey="6LfiyS0UAAAAAINUJI0YG4Z87VVqs_QdbaRg7EnS"
+													  data-callback='onSubmit'
+													  type="submit"> send
+											</button>
+											<button class="btn btn-warning btn-secondary btn-md"
+													  type="reset">reset
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</body>
+</html>
 
 
 
