@@ -98,33 +98,47 @@
 					<div class="twinkling">
 
 						<div class="slide">
-							<div class="content">i don't even like Star Wars that much/intro</div>
-						</div>
-						<div class="slide">
-							<div class="content">about/interests/purpose</div>
-						</div>
-
-						<div class="slide">
+							<div class="container">
 								<div class="content">
 
-										<div class="card">
-											<img src="images/ABQTH.png" alt="ABQ Town Hall" width="200px"/>
-											<p> My Deep Dive capstone project. Created to help engage residents in
-												local government. Built with three of my cohort members in ten short weeks on a "LAMP"
-												stack platform. Features abqopen GIS data to help educate and inform city residents.
-												This prototype is modeled around city council districts, however the platform was
-												designed to be scalabler so that it also may model a town hall in different levels of
-												government.
- 											</p>
-										</div>
-									</div>
+									<h1 id="welcome">
+										<i class="ti-placeholder"
+											style="display:inline-block; width:0; line-height:0; overflow:hidden;">.</i><span
+											style="display:inline;position:relative;font:inherit;color:inherit;"
+											class="ti-container">xyz</span>
+									</h1>
+
 								</div>
+							</div>
+						</div>
+
+						<div class="slide">
+							<div class="container">
+								<div class="content">about/interests/purpose</div>
+							</div>
+						</div>
 
 						<div class="slide">
 							<div class="content">
 
 								<div class="card">
-									<img src="images/ABQTH.png" alt="ABQ Town Hall" width="200px"/>
+									<img-responsive src="images/ABQTH.png" alt="ABQ Town Hall" width="200px"/>
+									<p> My Deep Dive capstone project. Created to help engage residents in
+										local government. Built with three of my cohort members in ten short weeks on a "LAMP"
+										stack platform. Features abqopen GIS data to help educate and inform city residents.
+										This prototype is modeled around city council districts, however the platform was
+										designed to be scalabler so that it also may model a town hall in different levels of
+										government.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="slide">
+							<div class="content">
+
+								<div class="card">
+									<img-responsive src="images/ABQTH.png" alt="ABQ Town Hall" width="200px"/>
 									<p> My Deep Dive capstone project. Created to help engage residents in
 										local government. Built with three of my cohort members in ten short weeks on a "LAMP"
 										stack platform. Features abqopen GIS data to help educate and inform city residents.
