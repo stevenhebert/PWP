@@ -24,7 +24,6 @@
 				  crossorigin="anonymous"></script>
 
 
-		<!-- from BCC form -->
 		<!-- jQuery Form, Additional Methods, Validate -->
 		<script type="text/javascript"
 				  src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
@@ -32,11 +31,12 @@
 				  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 		<script type="text/javascript"
 				  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+
 		<!-- Your JavaScript Form Validator -->
 		<script src="js/form-validate.js"></script>
-		<!-- Google reCAPTCHA -->
-		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
+		<!-- Google reCAPTCHA -->
+		<script src='https://www.google.com/recaptcha/api.js'></script>
 
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Playball|Roboto:400,400i,700,700i" rel="stylesheet"/>
@@ -198,21 +198,21 @@
 					</div>
 					<div class="btn-group-vertical col-sm-1" role="group">
 						<p>
-							<button class="btn btn-primary btn-success g-recaptcha btn-block"
-									  data-sitekey="6LfiyS0UAAAAAINUJI0YG4Z87VVqs_QdbaRg7EnS"
-									  data-callback='onSubmit'
-									  type="submit"> send
+							<button
+								class="g-recaptcha"
+								data-sitekey="6LfiyS0UAAAAAINUJI0YG4Z87VVqs_QdbaRg7EnS"
+								data-callback="YourOnSubmitFn">submit
 							</button>
 						</p>
 						<p>
 							<button class="btn btn-secondary btn-block"
-									  type="reset">reset
+									  type="reset">clear
 							</button>
 						</p>
 					</div>
 				</div>
-
 			</form>
+			<div id="output-area"></div>
 		</div>
 
 		<!-- footer -->
