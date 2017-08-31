@@ -105,19 +105,19 @@
 									<div class="yui-u">
 
 										<div class="talent">
-											<h2>Web Development</h2>
+											<h3>Web Development</h3>
 											<p>Assertively exploit wireless initiatives rather than synergistic core
 												competencies. </p>
 										</div>
 
 										<div class="talent">
-											<h2>Data Analytics</h2>
+											<h3>Data Analytics</h3>
 											<p>Credibly streamline mission-critical value with multifunctional
 												functionalities. </p>
 										</div>
 
 										<div class="talent">
-											<h2>Research</h2>
+											<h3>Research</h3>
 											<p>Proven ability to lead and manage a wide variety of design and development projects
 												in team and independent situations.</p>
 										</div>
@@ -144,7 +144,7 @@
 										<ul class="talent">
 											<li>Stata</li>
 											<li>R</li>
-											<li class="last">MatLab/li>
+											<li class="last">MatLab</li>
 										</ul>
 									</div>
 								</div>
@@ -158,27 +158,27 @@
 									<div class="yui-u">
 
 										<div class="job">
-											<h2>University of New Mexico</h2>
-											<h3>Graduate Assistant</h3>
-											<h4>2015-2017</h4>
+											<h3>University of New Mexico</h3>
+											<h4>Graduate Assistant</h4>
+											<h5>2015-2017</h5>
 											<p>Created surveys, gathered data, created datasets. Developed hypothesis’, reviewed
 												and designed analytical models. Programmed regressions and dynamic simulations.
 												Assessed statistical significance, interpreted and translated results.</p>
 										</div>
 
 										<div class="job">
-											<h2>Arkansas Department of Health</h2>
-											<h3>Specialist III</h3>
-											<h4>2014-2015</h4>
+											<h3>Arkansas Department of Health</h3>
+											<h4>Specialist III</h4>
+											<h5>2014-2015</h5>
 											<p>Collected, cleaned, and databased clinic outbreak data. Analyzed health and center
 												monthly financial data, created forecasts and visualizations. Recommended and
 												developed budget and policy changes.</p>
 										</div>
 
 										<div class="job last">
-											<h2>Hosto Buchan PLLC</h2>
-											<h3>Portfolio Analyst</h3>
-											<h4>2013-2014</h4>
+											<h3>Hosto Buchan PLLC</h3>
+											<h4>Portfolio Analyst</h4>
+											<h5>2013-2014</h5>
 											<p>Managed legal portfolios, analyzed performance reports and forecasted earnings.
 												Created database queries and spreadsheet macros to flag statute and discovery data.
 												Verified account data, reviewed and recommended for litigation.
@@ -194,20 +194,20 @@
 										<h2>Education</h2>
 									</div>
 									<div class="yui-u">
-										<h2>University of New Mexico - Albuquerque, New Mexico</h2>
-										<h3>Master of Arts, Applied Microeconomics</h3>
+										<h3>University of New Mexico - Albuquerque, New Mexico</h3>
+										<h4>Master of Arts, Applied Microeconomics</h4>
 									</div>
 
 									<div class="yui-u">
-										<h2>University of Arkansas - Little Rock, Arkansas</h2>
-										<h3>Mathematics and Statistics</h3>
+										<h3>University of Arkansas - Little Rock, Arkansas</h3>
+										<h4>Mathematics and Statistics</h4>
 									</div>
 
-									<h2>Arkansas State University - Little Rock, Arkansas</h2>
-									<h3>Bachelors of Science, Economics</h3>
+									<h3>Arkansas State University - Little Rock, Arkansas</h3>
+									<h4>Bachelors of Science, Economics</h4>
 
-									<h2>Jiangxi University of Finance and Economics - Jiangxi, Nanchang, PRC</h2>
-									<h3>Study Abroad</h3>
+									<h3>Jiangxi University of Finance and Economics - Jiangxi, Nanchang, PRC</h3>
+									<h4>Study Abroad</h4>
 
 
 								</div>
@@ -223,5 +223,7 @@
 			</div>
 
 		</div>
+
+
 	</body>
 </html>
