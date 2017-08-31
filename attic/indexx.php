@@ -33,7 +33,7 @@
 		<script type="text/javascript"
 				  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
 		<!-- Your JavaScript Form Validator -->
-		<script src="../public_html/js/form-validate.js"></script>
+		<script src="../js/form-validate.js"></script>
 		<!-- Google reCAPTCHA -->
 		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
@@ -65,7 +65,7 @@
 		<!-- header -->
 		<div class="container.fluid">
 			<header>
-				<nav class="navbar navbar-toggleable-md navbar-inverse">
+				<nav class="navbar navbar-toggleable-md">
 					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
 							  data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
 							  aria-label="Toggle navigation">
@@ -98,54 +98,40 @@
 					<div class="twinkling">
 
 						<div class="slide">
-							<div class="container">
+							<div class="content">i don't even like Star Wars that much/intro</div>
+						</div>
+						<div class="slide">
+							<div class="content">about/interests/purpose</div>
+						</div>
+
+						<div class="slide">
+
 								<div class="content">
-
-									<h1 id="welcome">
-										<i class="ti-placeholder"
-											style="display:inline-block; width:0; line-height:0; overflow:hidden;">.</i><span
-											style="display:inline;position:relative;font:inherit;color:inherit;"
-											class="ti-container"></span>
-									</h1>
-
+										<div class="card">
+											<img src="../images/ABQTH.png" alt="ABQ Town Hall" width="200px"/>
+											<p> My Deep Dive capstone project. Created to help engage residents in
+												local government. Built with three of my cohort members in ten short weeks on a "LAMP"
+												stack platform. Features abqopen GIS data to help educate and inform city residents.
+												This prototype is modeled around city council districts, however the platform was
+												designed to be scalabler so that it also may model a town hall in different levels of
+												government.
+ 											</p>
+										</div>
+									</div>
 								</div>
-							</div>
-						</div>
 
 						<div class="slide">
 							<div class="container">
-								<div class="content">about/interests/purpose</div>
-							</div>
-						</div>
 
-						<div class="slide">
-							<div class="content">
-
-								<div class="card">
-									<img src="images/ABQTH.png" alt="ABQ Town Hall" width="200px"/>
-									<p> My Deep Dive capstone project. Created to help engage residents in
-										local government. Built with three of my cohort members in ten short weeks on a "LAMP"
-										stack platform. Features abqopen GIS data to help educate and inform city residents.
-										This prototype is modeled around city council districts, however the platform was
-										designed to be scalabler so that it also may model a town hall in different levels of
-										government.
-									</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="slide">
-							<div class="content">
-
-								<div class="card">
-									<img src="images/ABQTH.png" alt="ABQ Town Hall" width="200px"/>
-									<p> My Deep Dive capstone project. Created to help engage residents in
-										local government. Built with three of my cohort members in ten short weeks on a "LAMP"
-										stack platform. Features abqopen GIS data to help educate and inform city residents.
-										This prototype is modeled around city council districts, however the platform was
-										designed to be scalabler so that it also may model a town hall in different levels of
-										government.
-									</p>
+								<div class="content">
+									<div id="portfolio" class="row">
+										<div class="card col-sm-6">
+											<img src="https://placeimg.com/640/480/any/sepia" alt="randy" width="200px"/>
+											<p class="card-text">This is a wider card with supporting text below as a natural
+												lead-in to
+												additional content. This content is a little bit longer.</p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -153,7 +139,7 @@
 						<div class="slide">
 							<div class="container">
 
-								<form id="contact" action="../public_html/php/mailer.php">contact
+								<form id="contact" action="../php/mailer.php">contact
 									<div class="form-group row">
 										<div class="input-group col-sm-11">
 											<div class="input-group-addon">
@@ -206,20 +192,6 @@
 				</div>
 
 			</div>
-		</div>
-
-		<!-- footer -->
-		<div class="container.fluid">
-			<footer class="footer">
-				<div class="footer-content">
-					<a href="https://github.com/stevenhebert" target="_blank">
-						<i class="fa fa-github fa-fw fa-2x" aria-hidden="true"></i>
-					</a>
-					<a href="https://linkedin.com/in/hebertsteven" target="_blank">
-						<i class="fa fa-linkedin fa-fw fa-2x" aria-hidden="true"></i>
-					</a>
-				</div>
-			</footer>
 		</div>
 
 	</body>

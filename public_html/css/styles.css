@@ -1,11 +1,6 @@
 /* Global CSS
 -------------------------------------------------- */
 @media (min-width: 576px) {
-	.carousel-caption p {
-		margin-bottom: 1.25rem;
-		font-size: 1.25rem;
-		line-height: 1.4;
-	}
 }
 
 @media (min-width: 768px) {
@@ -17,136 +12,58 @@
 }
 
 @media (min-width: 1200px) {
-
 }
 
-/* Navbar Stuff
+/* Navbar
+-------------------------------------------------- */
+nav-item {
+color: darkturquoise;
+}
+
+/* About
 -------------------------------------------------- */
 
-/* About Stuff
+
+/* Portfolio
 -------------------------------------------------- */
-/* Carousel base class */
-.carousel {
-	margin-bottom: 4rem;
-}
-
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-	z-index: 10;
-	bottom: 3rem;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel-item {
-	height: 20rem;
-}
-
-.carousel-item > img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	min-width: 100%;
-	height: 20rem;
-}
-
-/* Portfolio Stuff
--------------------------------------------------- */
-.album {
-	min-height: 35rem;
-	padding-top: 3rem;
-	padding-bottom: 3rem;
-}
-
 .card {
 	padding: .75rem;
-	margin-bottom: 2rem;
-	border: 0;
+	margin: 2rem;
 }
 
-.card > img {
-	margin-bottom: .75rem;
+img {
+	width: 20rem
+	height: 20rem
+	margin-bottom: 1rem;
 }
 
-.card-text {
-	font-size: 85%;
-}
 
-/* Contact Stuff
+/* Contact
 -------------------------------------------------- */
+.btn {
+padding: .5rem;
+font-size: 1rem;
+border-radius: .25;
+}
 
-/* Sticky footer styles
+.btn-primary {
+color: white;
+background-color: green;
+}
+
+.btn-secondary {
+color: white;
+background-color: red;
+}
+
+/* Footer
 -------------------------------------------------- */
-html {
-	position: relative;
-	min-height: 100%;
+footer {
+	text-align: center;
+	background-color: black;
+	padding: 2rem;
 }
 
-body {
-	/* Margin bottom by footer height */
-	margin-bottom: 120px;
-	min-height: 75rem;
-}
-
-.footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 60px;
-	line-height: 60px;
-	background-color: darkturquoise;
-}
-
-.footer-content {
-	margin-left: 15px;
-}
-
-.fa-github {
-	color: darkgreen;
-}
-
-.fa-linkedin {
-	color: darkred;
-}
-
-.site {
-	display: flex;
-	flex-direction: column;
-	height: 100%; /* 1, 3 */
-}
-
-.site-header,
-.site-footer {
-	flex: none; /* 2 */
-}
-
-.site-content {
-	flex: 1 0 auto; /* 2 */
-	padding: var(--space) var(--space) 0;
-	width: 100%;
-}
-
-.site-content::after {
-	content: '\00a0'; /* &nbsp; */
-	display: block;
-	margin-top: var(--space);
-	height: 0px;
-	visibility: hidden;
-}
-
-@media (--break-lg) {
-	.site-content {
-		padding-top: var(--space-lg);
-	}
-
-	.site-content::after {
-		margin-top: var(--space-lg);
-	}
-}
-
-.site-content--full {
-	padding: 0;
-}
-
-.site-content--full::after {
-	content: none;
+footer .fa {
+color: darkturquoise;
 }
