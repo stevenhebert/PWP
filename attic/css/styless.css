@@ -5,12 +5,12 @@
 }
 
 .stars {
-	background: #000 url(images/stars.png) repeat;
+	background: #000 url(../images/stars.png) repeat;
 	z-index: -1;
 }
 
 .twinkling {
-	background: transparent url(images/twinkling.png) repeat;
+	background: transparent url(../images/twinkling.png) repeat;
 	z-index: 0;
 
 	-moz-animation: move-twink-back 200s linear infinite;
@@ -57,11 +57,19 @@
 
 /* header
 -------------------------------------------------- */
-nav {
-	background: #999;
-	color: cyan
+.navbar {
+	position: relative;
+	min-height: 20px;
+	padding: 19px;
+	background-color: #000000;  }
 }
 
+.nav-link {
+}
+
+.navbar-inverse .navbar-toggler {
+border-color: rgba(255,255,255,.1);
+}
 /* main
 -------------------------------------------------- */
 @media (min-width: 768px) {
@@ -160,10 +168,16 @@ form {
 }
 
 /* footer
--------------------------------------------------- */
+--------------------------------------------------*/
+body {
+	/* Margin bottom by footer height */
+	margin-bottom: 120px;
+}
+
 .footer {
-	position: absolute;
 	bottom: 0;
+	position: fixed;
+
 	width: 100%;
 	height: 60px;
 	line-height: 60px;
@@ -179,13 +193,4 @@ form {
 
 .fa-linkedin {
 	color: darkred;
-}
-
-.site {
-	height: 100%;
-}
-
-.site-header,
-.site-footer {
-	flex: none;
 }

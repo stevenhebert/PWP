@@ -33,7 +33,7 @@
 		<script type="text/javascript"
 				  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
 		<!-- Your JavaScript Form Validator -->
-		<script src="js/form-validate.js"></script>
+		<script src="../public_html/js/form-validate.js"></script>
 		<!-- Google reCAPTCHA -->
 		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
@@ -65,7 +65,7 @@
 		<!-- header -->
 		<div class="container.fluid">
 			<header>
-				<nav class="navbar navbar-toggleable-md">
+				<nav class="navbar navbar-toggleable-md navbar-inverse">
 					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
 							  data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
 							  aria-label="Toggle navigation">
@@ -105,7 +105,7 @@
 										<i class="ti-placeholder"
 											style="display:inline-block; width:0; line-height:0; overflow:hidden;">.</i><span
 											style="display:inline;position:relative;font:inherit;color:inherit;"
-											class="ti-container">xyz</span>
+											class="ti-container"></span>
 									</h1>
 
 								</div>
@@ -122,7 +122,7 @@
 							<div class="content">
 
 								<div class="card">
-									<img-responsive src="images/ABQTH.png" alt="ABQ Town Hall" width="200px"/>
+									<img src="images/ABQTH.png" alt="ABQ Town Hall" width="200px"/>
 									<p> My Deep Dive capstone project. Created to help engage residents in
 										local government. Built with three of my cohort members in ten short weeks on a "LAMP"
 										stack platform. Features abqopen GIS data to help educate and inform city residents.
@@ -138,7 +138,7 @@
 							<div class="content">
 
 								<div class="card">
-									<img-responsive src="images/ABQTH.png" alt="ABQ Town Hall" width="200px"/>
+									<img src="images/ABQTH.png" alt="ABQ Town Hall" width="200px"/>
 									<p> My Deep Dive capstone project. Created to help engage residents in
 										local government. Built with three of my cohort members in ten short weeks on a "LAMP"
 										stack platform. Features abqopen GIS data to help educate and inform city residents.
@@ -153,7 +153,7 @@
 						<div class="slide">
 							<div class="container">
 
-								<form id="contact" action="php/mailer.php">contact
+								<form id="contact" action="../public_html/php/mailer.php">contact
 									<div class="form-group row">
 										<div class="input-group col-sm-11">
 											<div class="input-group-addon">
@@ -206,6 +206,20 @@
 				</div>
 
 			</div>
+		</div>
+
+		<!-- footer -->
+		<div class="container.fluid">
+			<footer class="footer">
+				<div class="footer-content">
+					<a href="https://github.com/stevenhebert" target="_blank">
+						<i class="fa fa-github fa-fw fa-2x" aria-hidden="true"></i>
+					</a>
+					<a href="https://linkedin.com/in/hebertsteven" target="_blank">
+						<i class="fa fa-linkedin fa-fw fa-2x" aria-hidden="true"></i>
+					</a>
+				</div>
+			</footer>
 		</div>
 
 	</body>

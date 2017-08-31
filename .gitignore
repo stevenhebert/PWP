@@ -4,4 +4,4 @@
 /node_modules
 
 # ignore mail configuration data
-**/php/mail-config.php
+public_html/php/mail-config.php
