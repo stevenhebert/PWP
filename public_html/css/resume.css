@@ -22,11 +22,11 @@
 	background: #266400;
 }
 
-/* //-- yui-grids style overrides -- */
+/* //-- yui-grids style overrides --
 body {
 	font-family: Georgia;
 	color: #444;
-}
+}*/
 
 #inner {
 	padding: 10px 80px;
@@ -77,11 +77,13 @@ h1, h2, h3, h4 {
 	color: #333;
 }
 
+/*
 p {
 	font-size: 88%;
 	line-height: 18px;
 	padding-right: 3em;
 }
+*/
 
 a {
 	color: #990003
