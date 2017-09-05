@@ -164,7 +164,7 @@
 										<button
 											class="btn btn-success g-recaptcha"
 											data-sitekey="6LfiyS0UAAAAAINUJI0YG4Z87VVqs_QdbaRg7EnS"
-											data-callback="YourOnSubmitFn">submit
+											data-callback="submit">submit
 										</button>
 									</p>
 									<p>

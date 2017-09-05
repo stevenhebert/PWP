@@ -14,7 +14,6 @@ $(document).ready(function(){
 		rules: {
 			name: {
 				required: true,
-				maxlength: 45
 			},
 			email: {
 				email: true,
@@ -31,7 +30,6 @@ $(document).ready(function(){
 		messages: {
 			name: {
 				required: "name is required",
-				maxlength: "name must be less than 45 characters"
 			},
 			email: {
 				email: "valid email address is required",
@@ -51,7 +49,7 @@ $(document).ready(function(){
 
 				success: function(ajaxOutput) {
 					// clear the output area's formatting
-					$("#output-area").css("display", "message sent");
+					$("#output-area").css("display", "");
 
 					// write the server's reply to the output area
 					$("#output-area").html(ajaxOutput);
