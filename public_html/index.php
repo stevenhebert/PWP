@@ -23,33 +23,27 @@
 				  crossorigin="anonymous"></script>
 
 
-		<!-- jQuery Form, Additional Methods, Validate -->
+		<!-- jQuery Form, Additional Methods, Validate, Google reCAPTCHA -->
 		<script type="text/javascript"
 				  src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
 		<script type="text/javascript"
 				  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 		<script type="text/javascript"
 				  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
-
-		<!-- Your JavaScript Form Validator -->
 		<script src="js/form-validate.js"></script>
-
-		<!-- Google reCAPTCHA -->
 		<script src='https://www.google.com/recaptcha/api.js'></script>
 
-		<!-- Google Fonts -->
+		<!-- Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Playball|Roboto:400,400i,700,700i" rel="stylesheet"/>
-
-		<!-- Font Awesome -->
 		<link type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 				rel="stylesheet">
 
-		<!-- My Stylesheets -->
-		<link rel="stylesheet" href="css/style.css"/>
+		<!-- My JS -->
+		<script type="text/javascript" src="js/onepagescroll.js"></script>
 
-		<!-- My Scripts -->
-		<script src="js/scripts.js" type="text/javascript"></script>
-
+		<!-- My CSS -->
+		<link href="css/onepage-scroll.css" rel="stylesheet" type="text/css">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
 
 		<!-- HTML5 shim and Respond . js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond . js doesn't work if you view the page via file:// -->
@@ -61,384 +55,160 @@
 		<title>Steven Hebert</title>
 
 	</head>
-	<body data-spy="scroll" data-target=".navbar-fixed-top">
+		<body>
 
-		<!-- header -->
-		<header>
-			<nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top">
-				<button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
-						  data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-						  aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<a class="navbar-brand" href="#">.</a>
-				<div class="navbar-collapse collapse" id="navbarCollapse" aria-expanded="false" style="">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item active">
-							<a class="nav-link" href="#about">about <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#portfolio">portfolio </a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#resume">resume</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</header>
+			<div class="wrapper">
+				<div class="main">
 
-		<!-- main -->
-		<!-- about -->
-		<div id="about" class="jumbotron">
-			<div class="section mr-auto">
-				<h1 class="display-3">Steven Hebert</h1>
-				<p class="lead">Economist, Software Developer</p>
-				<p>
-					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
-						contact
-					</button>
-				</p>
-			</div>
-		</div>
-
-
-		<!-- portfolio -->
-		<div class="container">
-
-			<div id="portfolio" class="row text-justify">
-
-				<div class="card col-sm-6">
-					<img class="mx-auto" src="images/ABQTH.png" alt="Albuquerque Town Hall"
-						  href="https://bootcamp-coders.cnm.edu/shebert2/townhall"/>
-					<p
-						class="card-text">My Deep Dive capstone project. Created to help engage residents in
-						local government.
-						Built with three of my cohort members in ten short weeks on a LAMP-stack platform. Features <a
-							class="ABQ Open" href="https://www.cabq.gov/abq-data/">ABQ Open</a> GIS data to help educate and
-						inform city residents. The prototype was virtual Town Hall at the city council district level.
-						However,
-						we designed made the platform flexible enough to such that it can scale to model a Town Hall at any
-						level
-						of government.
-					</p>
-				</div>
-
-				<div class="card col-sm-6">
-					<img class="mx-auto" src="https://placeimg.com/640/480/any/sepia" alt="randy"/>
-					<p class="card-text">This is a wider card with supporting text below as a natural lead-in
-						to
-						additional content. This content is a little bit longer.</p>
-				</div>
-
-			</div>
-
-
-			<div class="row text-justify">
-
-				<div class="card col-sm-6">
-					<img class="mx-auto" src="https://placeimg.com/640/480/any/sepia" alt="randy"/>
-					<p class="card-text">This is a wider card with supporting text below as a natural lead-in
-						to
-						additional content. This content is a little bit longer.</p>
-				</div>
-
-				<div class="card col-sm-6">
-					<img class="mx-auto" src="images/termPaper509.png" alt="Synthetic Control Model"/>
-					<p class="card-text">
-						<a href="#">This</a> is a plot from a research paper I completed in graduate school, it uses a
-						modern
-						regression
-						analysis technique called the Synthetic Control Model. In contrast to traditional regression
-						analysis,
-						SCM allows uses co-founding factors to explain account for changes in the dependent and independent
-						variables, where as these might be taken as unobserved or omitted variables in a traditional
-						analysis.
-					</p>
-				</div>
-
-			</div>
-
-		</div>
-
-		<!-- resume -->
-		<div class="container">
-
-			<div id="resume" class="yui-t7">
-				<div id="inner">
-
-					<div id="hd">
-						<div class="yui-gc">
-							<div class="yui-u first">
-								<h1>Steven Hebert</h1>
-								<h2>Web Developer, Social Scientist</h2>
-							</div>
-
-							<div class="yui-u">
-								<div class="contact-info">
-									<h3><a id="pdf" href="docs/steven-hebert-resume.pdf">Download PDF</a></h3>
-									<h3><a href="mailto:hebertsteven@me.com">hebertsteven@me.com</a></h3>
-									<h3>(501) 590-7814</h3>
-								</div>
+					<section class="page1">
+						<div class="page_container">
+							<div id="about" class="jumbotron">
+									<h1>steven hebert</h1>
+									<p class="lead">Economist, Software Developer</p>
 							</div>
 						</div>
-					</div>
+					</section>
 
-					<div id="bd">
-						<div id="yui-main">
-							<div class="yui-b">
 
-								<div class="yui-gf">
-									<div class="yui-u first">
-										<h2>Profile</h2>
+
+					<section class="page2">
+						<div class="container">
+
+							<h1>portfolio</h1>
+
+								<div id="portfolio" class="row text-justify">
+									<div class="card col-sm-6">
+										<img class="mx-auto" src="images/ABQTH.png" alt="Albuquerque Town Hall"
+											  href="https://bootcamp-coders.cnm.edu/shebert2/townhall"/>
+										<p>
+											class="card-text">My Deep Dive capstone project. Created to help engage residents in
+											local government.
+											Built with three of my cohort members in ten short weeks on a LAMP-stack platform. Features <a
+												class="ABQ Open" href="https://www.cabq.gov/abq-data/">ABQ Open</a> GIS data to help educate and
+											inform city residents. The prototype was virtual Town Hall at the city council district level.
+											However,
+											we designed made the platform flexible enough to such that it can scale to model a Town Hall at any
+											level
+											of government.
+										</p>
 									</div>
-									<div class="yui-u">
-										<p class="enlarge">
-											A self-starting, highly-motivated analytical thinker interested in the nexus of
-											energy,
-											technology and the environment.
+									<div class="card col-sm-6">
+										<img class="mx-auto" src="https://placeimg.com/640/480/any/sepia" alt="randy"/>
+										<p class="card-text">This is a wider card with supporting text below as a natural lead-in
+											to
+											additional content. This content is a little bit longer.</p>
+									</div>
+								</div>
+
+								<div class="row text-justify">
+									<div class="card col-sm-6">
+										<img class="mx-auto" src="https://placeimg.com/640/480/any/sepia" alt="randy"/>
+										<p class="card-text">This is a wider card with supporting text below as a natural lead-in
+											to
+											additional content. This content is a little bit longer.</p>
+									</div>
+									<div class="card col-sm-6">
+										<img class="mx-auto" src="images/termPaper509.png" alt="Synthetic Control Model"/>
+										<p class="card-text">
+											<a href="#">This</a> is a plot from a research paper I completed in graduate school, it uses a
+											modern
+											regression
+											analysis technique called the Synthetic Control Model. In contrast to traditional regression
+											analysis,
+											SCM allows uses co-founding factors to explain account for changes in the dependent and independent
+											variables, where as these might be taken as unobserved or omitted variables in a traditional
+											analysis.
 										</p>
 									</div>
 								</div>
 
-								<div class="yui-gf">
-									<div class="yui-u first">
-										<h2>Skills</h2>
-									</div>
-									<div class="yui-u">
-
-										<div class="talent">
-											<h3>Web Development</h3>
-											<p>Assertively exploit wireless initiatives rather than synergistic core
-												competencies. </p>
-										</div>
-
-										<div class="talent">
-											<h3>Data Analytics</h3>
-											<p>Credibly streamline mission-critical value with multifunctional
-												functionalities. </p>
-										</div>
-
-										<div class="talent">
-											<h3>Research</h3>
-											<p>Proven ability to lead and manage a wide variety of design and development
-												projects
-												in team and independent situations.</p>
-										</div>
-									</div>
-								</div>
-
-								<div class="yui-gf">
-									<div class="yui-u first">
-										<h2>Technical</h2>
-									</div>
-									<div class="yui-u">
-										<ul class="talent">
-											<li>XHTML</li>
-											<li>CSS</li>
-											<li class="last">Javascript</li>
-										</ul>
-
-										<ul class="talent">
-											<li>Jquery</li>
-											<li>PHP</li>
-											<li class="last">Git / Github</li>
-										</ul>
-
-										<ul class="talent">
-											<li>Stata</li>
-											<li>R</li>
-											<li class="last">MatLab</li>
-										</ul>
-									</div>
-								</div>
-
-								<div class="yui-gf">
-
-									<div class="yui-u first">
-										<h2>Experience</h2>
-									</div>
-
-									<div class="yui-u">
-
-										<div class="job">
-											<h3>University of New Mexico</h3>
-											<h4>Graduate Assistant</h4>
-											<h5>2015-2017</h5>
-											<p>Created surveys, gathered data, created datasets. Developed hypothesis’, reviewed
-												and designed analytical models. Programmed regressions and dynamic simulations.
-												Assessed statistical significance, interpreted and translated results.</p>
-										</div>
-
-										<div class="job">
-											<h3>Arkansas Department of Health</h3>
-											<h4>Specialist III</h4>
-											<h5>2014-2015</h5>
-											<p>Collected, cleaned, and databased clinic outbreak data. Analyzed health and
-												center
-												monthly financial data, created forecasts and visualizations. Recommended and
-												developed budget and policy changes.</p>
-										</div>
-
-										<div class="job last">
-											<h3>Hosto Buchan PLLC</h3>
-											<h4>Portfolio Analyst</h4>
-											<h5>2013-2014</h5>
-											<p>Managed legal portfolios, analyzed performance reports and forecasted earnings.
-												Created database queries and spreadsheet macros to flag statute and discovery
-												data.
-												Verified account data, reviewed and recommended for litigation.
-											</p>
-										</div>
-
-									</div>
-								</div>
-
-
-								<div class="yui-gf last">
-									<div class="yui-u first">
-										<h2>Education</h2>
-									</div>
-									<div class="yui-u">
-										<h3>University of New Mexico - Albuquerque, New Mexico</h3>
-										<h4>Master of Arts, Applied Microeconomics</h4>
-									</div>
-
-									<div class="yui-u">
-										<h3>University of Arkansas - Little Rock, Arkansas</h3>
-										<h4>Mathematics and Statistics</h4>
-									</div>
-
-									<h3>Arkansas State University - Little Rock, Arkansas</h3>
-									<h4>Bachelors of Science, Economics</h4>
-
-									<h3>Jiangxi University of Finance and Economics - Jiangxi, Nanchang, PRC</h3>
-									<h4>Study Abroad</h4>
-
-
-								</div>
-
-
 							</div>
-						</div>
-					</div>
+					</section>
 
-				</div>
-			</div>
-		</div>
 
-		<!-- footer -->
-		<div class="container.fluid">
 
-			<footer>
-				<a href="https://github.com/stevenhebert">
-					<i class="fa fa-github fa-fw fa-2x" aria-hidden="true"></i>
-				</a> |
-				<a href="https://linkedin.com/in/hebertsteven">
-					<i class="fa fa-linkedin fa-fw fa-2x" aria-hidden="true"></i>
-				</a> |
-				<a href="https://bootcamp-coders.cnm.edu/~shebert2/pwp/resume.php">
-					<i class="fa fa-file-text fa-fw fa-2x" aria-hidden="true"></i>
-				</a>
-			</footer>
+					<section class="page3">
+						<div class="container">
 
-		</div>
-
-		<!-- modal -->
-		<div class="modal fade bg-contactModal-lg" id="contactModal" tabindex="-1" role="dialog"
-			  aria-labelledby="myLargeModalLabel"
-			  aria-hidden="true">
-
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="container">
-						<div class="modal-header">
-							<h5 class="modal-title" id="contact">new message</h5>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">x</span>
-							</button>
-						</div>
-
-						<div class="form-group row">
-							<div class="input-group">
-								<div class="input-group-addon">
-									<i class="fa fa-user fa-fw" aria-hidden="true"></i>
-								</div>
-								<input type="text" class="form-control" id="name" name="name" placeholder="name">
-							</div>
-						</div>
-
-						<form id="contact" action="php/mailer.php">
-							<div class="form-group row">
-								<div class="input-group">
-									<div class="input-group-addon">
-										<i class="fa fa-envelope fa-fw" aria-hidden="true"></i>
-									</div>
-									<input type="email" class="form-control" id="email" name="email" placeholder="email">
-								</div>
-							</div>
+							<h1>contact</h1>
 
 							<div class="form-group row">
 								<div class="input-group">
 									<div class="input-group-addon">
-										<i class="fa fa-pencil fa-fw" aria-hidden="true"></i>
+										<i class="fa fa-user fa-fw" aria-hidden="true"></i>
 									</div>
-									<input type="text" class="form-control" id="subject" name="subject"
-											 placeholder="subject">
+									<input type="text" class="form-control" id="name" name="name" placeholder="name">
 								</div>
 							</div>
 
-							<div class="form-group row">
-								<div class="input-group">
-									<div class="input-group-addon">
-										<i class="fa fa-comment fa-fw" aria-hidden="true"></i>
+							<form id="contact" action="php/mailer.php">
+								<div class="form-group row">
+									<div class="input-group">
+										<div class="input-group-addon">
+											<i class="fa fa-envelope fa-fw" aria-hidden="true"></i>
+										</div>
+										<input type="email" class="form-control" id="email" name="email" placeholder="email">
 									</div>
-									<textarea class="form-control" rows="4" id="message" name="message"
-												 placeholder="message">
+								</div>
+
+								<div class="form-group row">
+									<div class="input-group">
+										<div class="input-group-addon">
+											<i class="fa fa-pencil fa-fw" aria-hidden="true"></i>
+										</div>
+										<input type="text" class="form-control" id="subject" name="subject"
+												 placeholder="subject">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<div class="input-group">
+										<div class="input-group-addon">
+											<i class="fa fa-comment fa-fw" aria-hidden="true"></i>
+										</div>
+										<textarea class="form-control" rows="4" id="message" name="message"
+													 placeholder="message">
 											</textarea>
+									</div>
 								</div>
-							</div>
-						</form>
+							</form>
 
-						<div class="modal-footer">
 							<div id="output-area"></div>
-						</div>
 
-						<div class="form-group row">
-							<p>
-								<button
-									class="btn btn-primary g-recaptcha"
-									data-sitekey="6LfiyS0UAAAAAINUJI0YG4Z87VVqs_QdbaRg7EnS"
-									data-callback="YourOnSubmitFn">submit
-								</button>
-							</p>
-							<p>
-								<button class="btn btn-secondary"
-										  type="reset">clear
-								</button>
-							</p>
-						</div>
+							<div class="form-group row">
+								<p>
+									<button
+										class="btn btn-primary g-recaptcha"
+										data-sitekey="6LfiyS0UAAAAAINUJI0YG4Z87VVqs_QdbaRg7EnS"
+										data-callback="YourOnSubmitFn">submit
+									</button>
+								</p>
+								<p>
+									<button class="btn btn-secondary"
+											  type="reset">clear
+									</button>
+								</p>
+							</div>
 
-					</div>
+						</div>
+					</section>
 
 				</div>
 			</div>
 
-		</div>
+			<script>
+				onePageScroll(".main", {
+					sectionContainer: "section",
+					loop: true,
+					responsiveFallback: false
+				});
+			</script>
 
-	</body>
-</html>
+		</body>
+	</html>
 
-/** TODO
-add border color to portfolio section
-add content to portfolio section (alternative PWP, MatLab project, future project)
-clean my room
-create responsive resume
-create responsive jumbotron (add background for smaller screens)
-card padding
-modal padding
-fix recaptcha button (again; has something to do with which div it's inside)
-scroll spy to only display active element when collapsed
-make some extra pretty if have time
-**/
-
+	<!-- a class="back" href="http://www.thepetedesign.com/#plugins">Back to The Pete Design</a>
+	<a href="https://github.com/peachananr/purejs-onepage-scroll"><img
+		style="position: absolute; top: 0; right: 0; border: 0;"
+		src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+	</div -->

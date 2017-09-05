@@ -1,10 +1,6 @@
-/* RESPONSIVE CSS
+/* responsive css
 -------------------------------------------------- */
 @media (min-width: 576px) {
-	.modal-dialog {
-		max-width: 500px;
-		margin: 30px auto;
-	}
 }
 
 @media (min-width: 768px) {
@@ -15,26 +11,80 @@
 }
 
 @media (min-width: 992px) {
-
 }
 
 @media (min-width: 1200px) {
-
 }
 
-/* NAVBAR
--------------------------------------------------- */
-nav {
-	padding 4rem;
-	font-size: medium;
-	color: #f7f7f7;
+
+
+/* global
+------------------------------------------------------------------- */
+html {
+	height: 100%;
+}
+body {
+	background: #e0e0e0;
+	padding: 0;
+	text-align: center;
+	position: relative;
+	margin: 0;
+	height: 100%;
 }
 
-a.navbar-brand {
-	color: #f7f7f7;
+.wrapper {
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
 }
 
-/* ABOUT
+.main {
+	float: left;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.main section {
+	overflow: hidden;
+}
+
+
+/* header
+------------------------------------------------------------------- */
+
+.back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	display: block;
+	padding: 7px;
+	width: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	background: rgba(255, 255, 255, 0.25);
+	font-weight: bold;
+	font-size: 13px;
+	color: #000;
+	-webkit-transition: all 500ms ease-in-out;
+	-moz-transition: all 500ms ease-in-out;
+	-o-transition: all 500ms ease-in-out;
+	transition: all 500ms ease-in-out;
+}
+
+.back:hover {
+	color: black;
+}
+
+header {
+	position: relative;
+	z-index: 10;
+}
+
+
+
+/* about
 -------------------------------------------------- */
 .jumbotron {
 	margin-bottom: 30rem;
@@ -43,15 +93,9 @@ a.navbar-brand {
 	border-radius: 0;
 }
 
-.display-3 {
 
-}
 
-p.lead {
-
-}
-
-/* PORTFOLIO
+/* portfolio
 -------------------------------------------------- */
 .card {
 	padding: 2rem;
@@ -66,8 +110,10 @@ img {
 	margin-bottom: 1rem;
 }
 
+
+
 /* CONTACT
--------------------------------------------------- */
+--------------------------------------------------
 .modal-body {
 	position: relative;
 	-webkit-box-flex: 1;
@@ -95,193 +141,3 @@ button.btn {
 	margin-left: .25rem;
 	margin-right: .25rem;
 }
-
-/* FOOTER
--------------------------------------------------- */
-footer {
-	text-align: center;
-	background-color: black;
-	padding: 2rem;
-}
-
-footer .fa {
-	color: darkturquoise;
-}
-
-/* RESUME
--------------------------------------------------- */
-/* yui-grids style overrides */
-#inner {
-	padding: 10px 80px;
-	margin: 80px auto;
-	background: #f5f5f5;
-	border: solid #666;
-	border-width: 8px 0 2px 0;
-}
-
-.yui-gf {
-	margin-bottom: 2em;
-	padding-bottom: 2em;
-	border-bottom: 1px solid #ccc;
-}
-
-/* header, body, footer */
-#hd {
-	margin: 2.5em 0 3em 0;
-	padding-bottom: 1.5em;
-	border-bottom: 1px solid #ccc
-}
-
-#hd h2 {
-	text-transform: uppercase;
-	letter-spacing: 2px;
-}
-
-#bd {
-	margin-bottom: 2em;
-}
-
-/* core typography and style */
-#hd h1 {
-	font-size: 48px;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-}
-
-h2 {
-	font-size: 152%
-}
-
-h3, h4 {
-	font-size: 122%;
-}
-
-h1, h2, h3, h4 {
-	color: #333;
-}
-
-p {
-	font-size: 100%;
-	line-height: 18px;
-	padding-right: 3em;
-}
-
-a:hover {
-	text-decoration: none;
-}
-
-strong {
-	font-weight: bold;
-}
-
-li {
-	line-height: 24px;
-	border-bottom: 1px solid #ccc;
-}
-
-p.enlarge {
-	font-size: 144%;
-	padding-right: 6.5em;
-	line-height: 24px;
-}
-
-p.enlarge span {
-	color: #000
-}
-
-.contact-info {
-	margin-top: 7px;
-}
-
-.first h2 {
-	font-style: italic;
-}
-
-.last {
-	border-bottom: 0
-}
-
-/* section styles */
-a#pdf {
-	display: block;
-	float: left;
-	background: #666;
-	color: white;
-	padding: 6px 50px 6px 12px;
-	margin-bottom: 6px;
-	text-decoration: none;
-}
-
-a#pdf:hover {
-	background: #222;
-}
-
-.job {
-	position: relative;
-	margin-bottom: 1em;
-	padding-bottom: 1em;
-	border-bottom: 1px solid #ccc;
-}
-
-.job h4 {
-	position: absolute;
-	top: 0.35em;
-	right: 0
-}
-
-.job p {
-	margin: 0.75em 0 3em 0;
-}
-
-.last {
-	border: none;
-}
-
-.skills-list {
-}
-
-.skills-list ul {
-	margin: 0;
-}
-
-.skills-list li {
-	margin: 3px 0;
-	padding: 3px 0;
-}
-
-.skills-list li span {
-	font-size: 152%;
-	display: block;
-	margin-bottom: -2px;
-	padding: 0
-}
-
-.talent {
-	width: 32%;
-	float: left
-}
-
-.talent h2 {
-	margin-bottom: 6px;
-}
-
-#srt-ttab {
-	margin-bottom: 100px;
-	text-align: center;
-}
-
-#srt-ttab img.last {
-	margin-top: 20px
-}
-
-/* override to force 1/8th width grids */
-.yui-gf .yui-u {
-	width: 80.2%;
-}
-
-.yui-gf div.first {
-	width: 12.3%;
-}
-
-
-
