@@ -23,24 +23,24 @@ $(document).ready(function(){
 			message: {
 				required: true,
 				minlength: 2,
-				maxlength: 10
+				maxlength: 2000,
 			}
 		},
 
 		// error messages to display to the end user
 		messages: {
 			name: {
-				required: "Y U have no name?!",
-				maxlength: "Yr name be too long."
+				required: "name is required",
+				maxlength: "name must be less than 45 characters"
 			},
 			email: {
-				email: "Please enter a valid email address.",
-				required: "Please enter a valid email address."
+				email: "valid email address is required",
+				required: "unrecognized email address"
 			},
 			message: {
-				required: "Please enter a message.",
-				minlength: "Y u no say something?",
-				maxlength: "2000 characters max."
+				required: "message cannot be blank",
+				minlength: "message length must be longer than zero characters",
+				maxlength: "message length must be shorter than two thousand characters"
 			}
 		},
 
@@ -51,7 +51,7 @@ $(document).ready(function(){
 
 				success: function(ajaxOutput) {
 					// clear the output area's formatting
-					$("#output-area").css("display", "");
+					$("#output-area").css("display", "message sent");
 
 					// write the server's reply to the output area
 					$("#output-area").html(ajaxOutput);

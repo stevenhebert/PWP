@@ -10,9 +10,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
 				integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 		<!-- jQuery -->
-		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-				  integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-				  crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 		<!-- Tether -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
 				  integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
@@ -24,12 +22,9 @@
 
 
 		<!-- jQuery Form, Additional Methods, Validate, Google reCAPTCHA -->
-		<script type="text/javascript"
-				  src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
-		<script type="text/javascript"
-				  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
-		<script type="text/javascript"
-				  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
 		<script src="js/form-validate.js"></script>
 		<script src='https://www.google.com/recaptcha/api.js'></script>
 
@@ -123,8 +118,8 @@
 
 				<section id="contact" class="page3">
 					<div class="container">
+						<form id="contact-form" action="php/mailer.php">
 
-						<form id="contact" action="php/mailer.php">
 							<div class="form-group row">
 								<label for="name" class="col-sm-1 col-form-label"></label>
 								<div class="input-group col-sm-12">
@@ -134,6 +129,7 @@
 									<input type="text" class="form-control" id="name" name="name" placeholder="name">
 								</div>
 							</div>
+
 							<div class="form-group row">
 								<label for="email" class="col-sm-1 col-form-label"></label>
 								<div class="input-group col-sm-12">
@@ -143,6 +139,7 @@
 									<input type="email" class="form-control" id="email" name="email" placeholder="email">
 								</div>
 							</div>
+
 							<div class="form-group row">
 								<label for="subject" class="col-sm-1 col-form-label"></label>
 								<div class="input-group col-sm-12">
@@ -152,6 +149,7 @@
 									<input type="text" class="form-control" id="subject" name="subject" placeholder="subject">
 								</div>
 							</div>
+
 							<div class="form-group row">
 								<div class="input-group col-sm-11">
 									<div class="input-group-addon">
@@ -164,20 +162,20 @@
 								<div class="btn-group-vertical col-sm-1" role="group">
 									<p>
 										<button
-											class="g-recaptcha"
+											class="btn btn-success g-recaptcha"
 											data-sitekey="6LfiyS0UAAAAAINUJI0YG4Z87VVqs_QdbaRg7EnS"
-											data-callback="onSubmit">submit
+											data-callback="YourOnSubmitFn">submit
 										</button>
 									</p>
 									<p>
-										<button class="btn btn-secondary btn-block"
+										<button class="btn btn-warning btn-block"
 												  type="reset">clear
 										</button>
 									</p>
 								</div>
 							</div>
 						</form>
-						<div id="output-area">message goes here</div>
+						<div id="output-area"></div>
 					</div>
 
 					<footer>
