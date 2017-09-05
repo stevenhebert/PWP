@@ -5,7 +5,7 @@
 
 @media (min-width: 768px) {
 	.jumbotron {
-		background-image: url("https://bootcamp-coders.cnm.edu/~shebert2/pwp/public_html/images/A.png");
+		background-image: url("https://bootcamp-coders.cnm.edu/~shebert2/pwp/public_html/images/jumbotron.png");
 		background-size: 100% 100%;
 	}
 }
@@ -13,20 +13,17 @@
 @media (min-width: 992px) {
 }
 
-@media (min-width: 1200px) {
-}
-
-
-
 /* global
 ------------------------------------------------------------------- */
 html {
 	height: 100%;
+	box-sizing: border-box;
+
 }
+
 body {
 	background: #e0e0e0;
 	padding: 0;
-	text-align: center;
 	position: relative;
 	margin: 0;
 	height: 100%;
@@ -48,52 +45,13 @@ body {
 	overflow: hidden;
 }
 
-
-/* header
-------------------------------------------------------------------- */
-
-.back {
-	position: absolute;
-	top: 0;
-	left: 0;
-	text-align: center;
-	display: block;
-	padding: 7px;
-	width: 100%;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	background: rgba(255, 255, 255, 0.25);
-	font-weight: bold;
-	font-size: 13px;
-	color: #000;
-	-webkit-transition: all 500ms ease-in-out;
-	-moz-transition: all 500ms ease-in-out;
-	-o-transition: all 500ms ease-in-out;
-	transition: all 500ms ease-in-out;
-}
-
-.back:hover {
-	color: black;
-}
-
-header {
-	position: relative;
-	z-index: 10;
-}
-
-
-
 /* about
 -------------------------------------------------- */
 .jumbotron {
-	margin-bottom: 30rem;
 	height: 500px;
-	width: auto;
 	border-radius: 0;
+	padding: 0px;
 }
-
-
 
 /* portfolio
 -------------------------------------------------- */
@@ -110,9 +68,23 @@ img {
 	margin-bottom: 1rem;
 }
 
+/* footer
+-------------------------------------------------- */
+footer {
+	text-align: center;
+	background-color: black;
+	padding: 2rem;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
 
+footer .fa {
+	color: darkturquoise;
+}
 
-/* CONTACT
+/* modal
 --------------------------------------------------
 .modal-body {
 	position: relative;
@@ -135,9 +107,4 @@ img {
 
 div.modal-content {
 	padding: 2rem;
-}
-
-button.btn {
-	margin-left: .25rem;
-	margin-right: .25rem;
 }

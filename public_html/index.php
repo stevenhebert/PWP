@@ -52,163 +52,157 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
-		<title>Steven Hebert</title>
+		<title>steven hebert</title>
 
 	</head>
-		<body>
 
-			<div class="wrapper">
-				<div class="main">
+	<body>
+		<div class="wrapper">
+			<div class="main">
 
-					<section class="page1">
-						<div class="page_container">
-							<div id="about" class="jumbotron">
-									<h1>steven hebert</h1>
-									<p class="lead">Economist, Software Developer</p>
+				<section id="home" class="page1">
+					<div class="page_container">
+						<div class="jumbotron">
+							<h1 class="display-3">Steven Hebert</h1>
+							<p class="lead">Economist, Software Developer</p>
+							<p>
+						</div>
+					</div>
+				</section>
+
+				<section id="portfolio" class="page2">
+					<div class="container">
+
+						<h1>portfolio</h1>
+
+						<div class="card-columns">
+							<div class="card">
+								<img class="card-img-top img-fluid" src="images/card1.png" alt="Albuquerque Town Hall">
+								<div class="card-block">
+									<p class="card-text">My Deep Dive capstone project. Created to help engage residents in local government. Built with three of my cohort members in ten short weeks on a LAMP-stack platform. Features <a class="ABQ Open" href="https://www.cabq.gov/abq-data/">ABQ Open</a> GIS data to help educate and inform city residents. The prototype was virtual Town Hall at the city council district level. However, we designed made the platform flexible enough to such that it can scale to model a Town Hall at any level of government.</p>
+								</div>
+							</div>
+
+							<div class="card">
+								<img class="card-img-top img-fluid" src="images/card2.png" alt="Synthetic Control Model">
+								<div class="card-block">
+									<p class="card-text">This is a plot from a research paper I completed in graduate school, it uses a modern regression analysis technique called the Synthetic Control Model. In contrast to traditional regression analysis, SCM allows uses co-founding factors to explain account for changes in the dependent and independent variables, where as these might be taken as unobserved or omitted variables in a traditional analysis.</p>
+								</div>
+							</div>
+
+							<div class="card">
+								<img class="card-img img-fluid" src="..." alt="Card image">
+							</div>
+
+							<div class="card p-3 text-justify">
+								<blockquote class="card-blockquote">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+									<footer>
+										<small class="text-muted">
+											Someone famous in <cite title="Source Title">Source Title</cite>
+										</small>
+									</footer>
+								</blockquote>
+							</div>
+
+							<div class="card">
+								<div class="card-block">
+									<h4 class="card-title">Card title</h4>
+									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+										additional content. This card has even longer content than the first to show that equal
+										height action.</p>
+									<p class="card-text">
+										<small class="text-muted">Last updated 3 mins ago</small>
+									</p>
+								</div>
 							</div>
 						</div>
-					</section>
 
+					</div>
+				</section>
 
+				<section id="contact" class="page3">
+					<div class="container">
 
-					<section class="page2">
-						<div class="container">
-
-							<h1>portfolio</h1>
-
-								<div id="portfolio" class="row text-justify">
-									<div class="card col-sm-6">
-										<img class="mx-auto" src="images/ABQTH.png" alt="Albuquerque Town Hall"
-											  href="https://bootcamp-coders.cnm.edu/shebert2/townhall"/>
-										<p>
-											class="card-text">My Deep Dive capstone project. Created to help engage residents in
-											local government.
-											Built with three of my cohort members in ten short weeks on a LAMP-stack platform. Features <a
-												class="ABQ Open" href="https://www.cabq.gov/abq-data/">ABQ Open</a> GIS data to help educate and
-											inform city residents. The prototype was virtual Town Hall at the city council district level.
-											However,
-											we designed made the platform flexible enough to such that it can scale to model a Town Hall at any
-											level
-											of government.
-										</p>
-									</div>
-									<div class="card col-sm-6">
-										<img class="mx-auto" src="https://placeimg.com/640/480/any/sepia" alt="randy"/>
-										<p class="card-text">This is a wider card with supporting text below as a natural lead-in
-											to
-											additional content. This content is a little bit longer.</p>
-									</div>
-								</div>
-
-								<div class="row text-justify">
-									<div class="card col-sm-6">
-										<img class="mx-auto" src="https://placeimg.com/640/480/any/sepia" alt="randy"/>
-										<p class="card-text">This is a wider card with supporting text below as a natural lead-in
-											to
-											additional content. This content is a little bit longer.</p>
-									</div>
-									<div class="card col-sm-6">
-										<img class="mx-auto" src="images/termPaper509.png" alt="Synthetic Control Model"/>
-										<p class="card-text">
-											<a href="#">This</a> is a plot from a research paper I completed in graduate school, it uses a
-											modern
-											regression
-											analysis technique called the Synthetic Control Model. In contrast to traditional regression
-											analysis,
-											SCM allows uses co-founding factors to explain account for changes in the dependent and independent
-											variables, where as these might be taken as unobserved or omitted variables in a traditional
-											analysis.
-										</p>
-									</div>
-								</div>
-
-							</div>
-					</section>
-
-
-
-					<section class="page3">
-						<div class="container">
-
-							<h1>contact</h1>
-
+						<form id="contact" action="php/mailer.php">
 							<div class="form-group row">
-								<div class="input-group">
+								<label for="name" class="col-sm-1 col-form-label"></label>
+								<div class="input-group col-sm-12">
 									<div class="input-group-addon">
 										<i class="fa fa-user fa-fw" aria-hidden="true"></i>
 									</div>
 									<input type="text" class="form-control" id="name" name="name" placeholder="name">
 								</div>
 							</div>
-
-							<form id="contact" action="php/mailer.php">
-								<div class="form-group row">
-									<div class="input-group">
-										<div class="input-group-addon">
-											<i class="fa fa-envelope fa-fw" aria-hidden="true"></i>
-										</div>
-										<input type="email" class="form-control" id="email" name="email" placeholder="email">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<div class="input-group">
-										<div class="input-group-addon">
-											<i class="fa fa-pencil fa-fw" aria-hidden="true"></i>
-										</div>
-										<input type="text" class="form-control" id="subject" name="subject"
-												 placeholder="subject">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<div class="input-group">
-										<div class="input-group-addon">
-											<i class="fa fa-comment fa-fw" aria-hidden="true"></i>
-										</div>
-										<textarea class="form-control" rows="4" id="message" name="message"
-													 placeholder="message">
-											</textarea>
-									</div>
-								</div>
-							</form>
-
-							<div id="output-area"></div>
-
 							<div class="form-group row">
-								<p>
-									<button
-										class="btn btn-primary g-recaptcha"
-										data-sitekey="6LfiyS0UAAAAAINUJI0YG4Z87VVqs_QdbaRg7EnS"
-										data-callback="YourOnSubmitFn">submit
-									</button>
-								</p>
-								<p>
-									<button class="btn btn-secondary"
-											  type="reset">clear
-									</button>
-								</p>
+								<label for="email" class="col-sm-1 col-form-label"></label>
+								<div class="input-group col-sm-12">
+									<div class="input-group-addon">
+										<i class="fa fa-envelope fa-fw" aria-hidden="true"></i>
+									</div>
+									<input type="email" class="form-control" id="email" name="email" placeholder="email">
+								</div>
 							</div>
+							<div class="form-group row">
+								<label for="subject" class="col-sm-1 col-form-label"></label>
+								<div class="input-group col-sm-12">
+									<div class="input-group-addon">
+										<i class="fa fa-pencil fa-fw" aria-hidden="true"></i>
+									</div>
+									<input type="text" class="form-control" id="subject" name="subject" placeholder="subject">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="input-group col-sm-11">
+									<div class="input-group-addon">
+										<i class="fa fa-comment fa-fw" aria-hidden="true"></i>
+									</div>
+									<textarea class="form-control" rows="4" id="message" name="message"
+												 placeholder="message">
+						</textarea>
+								</div>
+								<div class="btn-group-vertical col-sm-1" role="group">
+									<p>
+										<button
+											class="g-recaptcha"
+											data-sitekey="6LfiyS0UAAAAAINUJI0YG4Z87VVqs_QdbaRg7EnS"
+											data-callback="onSubmit">submit
+										</button>
+									</p>
+									<p>
+										<button class="btn btn-secondary btn-block"
+												  type="reset">clear
+										</button>
+									</p>
+								</div>
+							</div>
+						</form>
+						<div id="output-area">message goes here</div>
+					</div>
 
-						</div>
-					</section>
+					<footer>
+						<a href="https://github.com/stevenhebert">
+							<i class="fa fa-github fa-fw fa-2x" aria-hidden="true"></i>
+						</a> |
+						<a href="https://linkedin.com/in/hebertsteven">
+							<i class="fa fa-linkedin fa-fw fa-2x" aria-hidden="true"></i>
+						</a> |
+						<a href="https://bootcamp-coders.cnm.edu/~shebert2/pwp/resume.php">
+							<i class="fa fa-file-text fa-fw fa-2x" aria-hidden="true"></i>
+						</a>
+					</footer>
+				</section>
 
-				</div>
 			</div>
+		</div>
 
-			<script>
-				onePageScroll(".main", {
-					sectionContainer: "section",
-					loop: true,
-					responsiveFallback: false
-				});
-			</script>
+		<script>
+			onePageScroll(".main", {
+				sectionContainer: "section",
+				loop: false,
+				responsiveFallback: false
+			});
+		</script>
 
-		</body>
-	</html>
-
-	<!-- a class="back" href="http://www.thepetedesign.com/#plugins">Back to The Pete Design</a>
-	<a href="https://github.com/peachananr/purejs-onepage-scroll"><img
-		style="position: absolute; top: 0; right: 0; border: 0;"
-		src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
-	</div -->
+	</body>
+</html>
