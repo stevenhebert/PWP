@@ -13,7 +13,7 @@ $(document).ready(function(){
 		// each rule starts with the form input element's NAME attribute
 		rules: {
 			name: {
-				required: true,
+				required: true
 			},
 			email: {
 				email: true,
@@ -21,24 +21,22 @@ $(document).ready(function(){
 			},
 			message: {
 				required: true,
-				minlength: 2,
-				maxlength: 2000,
+				maxlength: 2000
 			}
 		},
 
 		// error messages to display to the end user
 		messages: {
 			name: {
-				required: "name is required",
+				required: "Please enter your name."
 			},
 			email: {
-				email: "valid email address is required",
-				required: "unrecognized email address"
+				email: "Please enter a valid email address.",
+				required: "Please enter a valid email address."
 			},
 			message: {
-				required: "message cannot be blank",
-				minlength: "message length must be longer than zero characters",
-				maxlength: "message length must be shorter than two thousand characters"
+				required: "Please enter a message.",
+				maxlength: "2000 characters max."
 			}
 		},
 
@@ -62,6 +60,6 @@ $(document).ready(function(){
 			})
 		}
 
-	});/* end validate function */
+	});
 
-});/*end document.ready()*/
+});

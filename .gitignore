@@ -3,3 +3,4 @@
 /vendor
 /node_modules
 **/php/mail-config.php
+composer.lock

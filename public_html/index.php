@@ -26,7 +26,9 @@
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
 		<script src="js/form-validate.js"></script>
-		<script src='https://www.google.com/recaptcha/api.js'></script>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+		<script src="js/recaptcha.js"></script>
+
 
 		<!-- Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Playball|Roboto:400,400i,700,700i" rel="stylesheet"/>
@@ -48,7 +50,6 @@
 		<![endif]-->
 
 		<title>steven hebert</title>
-
 	</head>
 
 	<body>
@@ -118,11 +119,11 @@
 
 				<section id="contact" class="page3">
 					<div class="container">
-						<form id="contact-form" action="php/mailer.php">
+						<form id="contact-form" action="php/mailer.php" method="POST">
 
 							<div class="form-group row">
-								<label for="name" class="col-sm-1 col-form-label"></label>
-								<div class="input-group col-sm-12">
+								<label for="name" class="col-xs-1 col-form-label"></label>
+								<div class="input-group col-sm">
 									<div class="input-group-addon">
 										<i class="fa fa-user fa-fw" aria-hidden="true"></i>
 									</div>
@@ -131,8 +132,8 @@
 							</div>
 
 							<div class="form-group row">
-								<label for="email" class="col-sm-1 col-form-label"></label>
-								<div class="input-group col-sm-12">
+								<label for="email" class="col-xs-1 col-form-label"></label>
+								<div class="input-group col-sm">
 									<div class="input-group-addon">
 										<i class="fa fa-envelope fa-fw" aria-hidden="true"></i>
 									</div>
@@ -141,8 +142,8 @@
 							</div>
 
 							<div class="form-group row">
-								<label for="subject" class="col-sm-1 col-form-label"></label>
-								<div class="input-group col-sm-12">
+								<label for="subject" class="col-xs-1 col-form-label"></label>
+								<div class="input-group col-sm">
 									<div class="input-group-addon">
 										<i class="fa fa-pencil fa-fw" aria-hidden="true"></i>
 									</div>
@@ -155,27 +156,23 @@
 									<div class="input-group-addon">
 										<i class="fa fa-comment fa-fw" aria-hidden="true"></i>
 									</div>
-									<textarea class="form-control" rows="4" id="message" name="message"
-												 placeholder="message">
-						</textarea>
+									<textarea class="form-control " rows="4" id="message" name="message" placeholder="message"></textarea>
 								</div>
+
 								<div class="btn-group-vertical col-sm-1" role="group">
-									<p>
-										<button
-											class="btn btn-success g-recaptcha"
-											data-sitekey="6LfiyS0UAAAAAINUJI0YG4Z87VVqs_QdbaRg7EnS"
-											data-callback="submit">submit
-										</button>
-									</p>
-									<p>
-										<button class="btn btn-warning btn-block"
-												  type="reset">clear
-										</button>
-									</p>
+									<button class="btn g-recaptcha" data-sitekey="6LfiyS0UAAAAAINUJI0YG4Z87VVqs_QdbaRg7EnS" data-callback='onSubmit'>Submit</button>
+									<button class="btn" type="reset"> Reset</button>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-sm">
+									<div id="output-area"></div>
 								</div>
 							</div>
 						</form>
-						<div id="output-area"></div>
+
+
 					</div>
 
 					<footer>
@@ -204,3 +201,5 @@
 
 	</body>
 </html>
+
+acsii text cow
