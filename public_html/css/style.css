@@ -1,48 +1,55 @@
 /* responsive css
 -------------------------------------------------- */
-@media (min-width: 576px) {
-}
-
 @media (min-width: 768px) {
 	.jumbotron {
 		background-image: url("https://bootcamp-coders.cnm.edu/~shebert2/pwp/public_html/images/jumbotron.png");
 		background-size: 100% 100%;
 	}
-}
 
-@media (min-width: 992px) {
+	html {
+		height: 100%;
+	}
+
+	body {
+		background: #e2e1e0;
+		height: 100%;
+	}
+
+	.wrapper {
+		height: 100%;
+	}
+
+	.main section {
+		overflow: hidden;
+	}
+
+	.onepage-wrapper {
+		height: 100%;
+	}
+
+	.ops-section {
+		height: 100%;
+		position: relative;
+	}
+
+	h1 {
+		margin: .75rem;
+	}
+
+	.contact-form {
+		margin-top: 20rem;
+	}
+
+	.grecaptcha-badge {
+		margin-bottom: -48rem !important;
+		position: absolute !important;
+	}
 }
 
 /* global
-------------------------------------------------------------------- */
-html {
-	height: 100%;
-}
-
-body {
-	background: #e2e1e0;
-	height: 100%;
-}
-
-.wrapper {
-	height: 100%;
-}
-
-.main section {
-	overflow: hidden;
-}
-
-.onepage-wrapper{
-	height: 100%;
-}
-
-.ops-section {
-	height: 100%;
-	position: relative;
-}
-
-h1 {
-	margin: .75rem;
+-------------------------------------------------- */
+a {
+	color: #366744
 }
 
 /* about
@@ -50,6 +57,16 @@ h1 {
 .jumbotron {
 	height: 500px;
 	border-radius: 0;
+	background-color: #00ced1;
+}
+
+p.lead {
+	padding-left: 1rem;
+	color: #000
+}
+
+h1.display-3 {
+	color: #000
 }
 
 /* portfolio
@@ -57,8 +74,7 @@ h1 {
 .card {
 	margin-bottom: 10px; /* Added */
 	padding: 10px 10px 10px 10px;
-	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-
+	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
 /* contact
@@ -67,10 +83,6 @@ h1 {
 	background-color: #343436;
 	color: #00ced1;
 	margin: .75rem;
-
-}
-.grecaptcha-badge {
-	bottom: unset !important;
 }
 
 /* footer
@@ -87,30 +99,4 @@ footer {
 
 footer .fa {
 	color: #00ced1;
-
-}
-
-/* modal
---------------------------------------------------
-.modal-body {
-	position: relative;
-	-webkit-box-flex: 1;
-	-webkit-flex: 1 1 auto;
-	-ms-flex: 1 1 auto;
-	flex: 1 1 auto;
-	padding: 15rem;
-}
-
-.model-content {
-	position: relative;
-	display: flex;
-	background-clip: padding-box;
-	border: 1px solid rgba(0, 0, 0, .2);
-	border-radius: .3rem;
-	outline: 0;
-	background-color: white;
-}
-
-div.modal-content {
-	padding: 2rem;
 }

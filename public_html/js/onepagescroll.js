@@ -1,6 +1,6 @@
-/* ===========================================================
+/* -------------------------------------------------------------
  * onepagescroll.js v1.2.2
- * ===========================================================
+ *
  * Copyright 2014 Pete Rojwongsuriya.
  * http://www.thepetedesign.com
  *
@@ -12,21 +12,21 @@
  *
  * License: GPL v3
  *
- * ========================================================== */
+ * -------------------------------------------------------------*/
 
 function onePageScroll(element, options) {
 
 	var defaults = {
 			sectionContainer: "section",
-			easing: "ease",
-			animationTime: 1000,
-			pagination: true,
+			easing: "easing",
+			animationTime: 600,
+			pagination: false,
 			updateURL: false,
 			keyboard: true,
 			beforeMove: null,
 			afterMove: null,
 			loop: false,
-			responsiveFallback: false
+			responsiveFallback: 768
 		},
 		_root = this,
 		settings = Object.extend({}, defaults, options),

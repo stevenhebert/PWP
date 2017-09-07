@@ -42,6 +42,7 @@
 		<script type="text/javascript" src="js/onepagescroll.js"></script>
 
 		<!-- My CSS -->
+		<link href="css/onepage-scroll.css" rel="stylesheet" type="text/css">
 		<link href="css/style.css" rel="stylesheet" type="text/css">
 
 		<!-- HTML5 shim and Respond . js for IE8 support of HTML5 elements and media queries -->
@@ -69,57 +70,63 @@
 				</section>
 
 				<section id="portfolio" class="page2">
+
 					<div class="container">
 						<h1>portfolio</h1>
-
 						<div class="card-deck">
 							<div class="card">
-								<img class="card-img-top img-fluid" src="images/card1.png" alt="Albuquerque Town Hall">
+								<img class="card-img-top img-fluid" src="docs/card1.png" alt="Albuquerque Town Hall">
 								<div class="card-block">
-									<p class="card-text">My Deep Dive capstone project. Created to help engage residents in
-										local government. Built with three of my cohort members in ten short weeks on a
-										LAMP-stack platform. Features <a class="ABQ Open"
-																					href="https://www.cabq.gov/abq-data/">ABQ Open</a> GIS
-										data to help educate and inform city residents. The prototype was virtual Town Hall at
-										the city council district level. However, we designed made the platform flexible enough
-										to such that it can scale to model a Town Hall at any level of government.</p>
+									<p class="card-text">
+										<small class="text-muted">
+											<a href="https://ABQTownHall.com">ABQ Town Hall</a>
+										</small>
+										is a web application I created with my Deep Dive capstone team. In
+										addition to an open forum, it utilizes ABQ Open GIS data to help inform and engage
+										Albuquerque residents.
+									</p>
 								</div>
 							</div>
 
 							<div class="card">
-								<img class="card-img-top img-fluid" src="images/card2.png" alt="Synthetic Control Model">
+								<img class="card-img-top img-fluid" src="docs/card2.png" alt="Synthetic Control Model">
 								<div class="card-block">
-									<p class="card-text">This is a plot from a research paper I completed in graduate school,
-										it uses a modern regression analysis technique called the Synthetic Control Model. In
-										contrast to traditional regression analysis, SCM allows uses co-founding factors to
-										explain account for changes in the dependent and independent variables, where as these
-										might be taken as unobserved or omitted variables in a traditional analysis.</p>
+									<p class="card-text">This is an econometric exercise researching recidivism rates after a
+										major policy change in Portugal. I used a synthetic control method to estimate a control
+										consisting of 19 similar countries.
+									</p>
+									<p>
+										<small class="text-muted">
+											<a href="docs/portgualSynth.do"> .do file</a>
+										</small>
+										,
+										<small class="text-muted">
+											<a href="docs/Port.dta"> data file</a>
+										</small>
+									</p>
 								</div>
 							</div>
 						</div>
 
 						<div class="card-deck">
 							<div class="card">
-								<img class="card-img-top img-fluid" src="images/card1.png" alt="Albuquerque Town Hall">
+								<img class="card-img-top img-fluid" src="docs/card3.png" alt="Star Wars themed webpage">
 								<div class="card-block">
-									<p class="card-text">My Deep Dive capstone project. Created to help engage residents in
-										local government. Built with three of my cohort members in ten short weeks on a
-										LAMP-stack platform. Features <a class="ABQ Open"
-																					href="https://www.cabq.gov/abq-data/">ABQ Open</a> GIS
-										data to help educate and inform city residents. The prototype was virtual Town Hall at
-										the city council district level. However, we designed made the platform flexible enough
-										to such that it can scale to model a Town Hall at any level of government.</p>
+									<p class="card-text">An alternative pwp in progress. Uses only CSS to achieve a parallax effect and
+										is modeled after one American epic space opera.</p>
+									<p>
+										<small class="text-muted">
+											<a href="https://stevenhebert.net/public_html/indexx.php">on website not that far, far away...</a>
+										</small>
+									</p>
 								</div>
 							</div>
 
 							<div class="card">
-								<img class="card-img-top img-fluid" src="images/card2.png" alt="Synthetic Control Model">
-								<div class="card-block">
-									<p class="card-text">This is a plot from a research paper I completed in graduate school,
-										it uses a modern regression analysis technique called the Synthetic Control Model. In
-										contrast to traditional regression analysis, SCM allows uses co-founding factors to
-										explain account for changes in the dependent and independent variables, where as these
-										might be taken as unobserved or omitted variables in a traditional analysis.</p>
+								<img class="card-img-top img-fluid" src="docs/card2.png" alt="">
+								<div class="card-block"> Put dynamic optimization, optimal control project here, or
+									php todo list here.
+									<p class="card-text"></p>
 								</div>
 							</div>
 						</div>
@@ -184,10 +191,9 @@
 							</div>
 
 							<div class="row">
-									<div id="output-area"></div>
+								<div id="output-area"></div>
 							</div>
 						</form>
-
 					</div>
 
 					<footer>
@@ -197,7 +203,7 @@
 						<a href="https://linkedin.com/in/hebertsteven">
 							<i class="fa fa-linkedin fa-fw fa-2x" aria-hidden="true"></i>
 						</a> |
-						<a href="https://bootcamp-coders.cnm.edu/~shebert2/pwp/resume.php">
+						<a href="docs/resumeStevenHebert.pdf">
 							<i class="fa fa-file-text fa-fw fa-2x" aria-hidden="true"></i>
 						</a>
 					</footer>
@@ -210,11 +216,9 @@
 			onePageScroll(".main", {
 				sectionContainer: "section",
 				loop: false,
-				responsiveFallback: false
+				responsiveFallback: 768
 			});
 		</script>
 
 	</body>
 </html>
-
-acsii text cow

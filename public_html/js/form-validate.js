@@ -28,15 +28,15 @@ $(document).ready(function(){
 		// error messages to display to the end user
 		messages: {
 			name: {
-				required: "Please enter your name."
+				required: "Name field cannot be left blank"
 			},
 			email: {
-				email: "Please enter a valid email address.",
-				required: "Please enter a valid email address."
+				email: "Email field cannot be left blank",
+				required: "Not recognized as a valid email"
 			},
 			message: {
-				required: "Please enter a message.",
-				maxlength: "2000 characters max."
+				required: "Message field cannot be left blank",
+				maxlength: "Your message exceeds 2000 characters"
 			}
 		},
 
