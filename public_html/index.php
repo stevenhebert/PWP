@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-
-		<meta charset="utf-8"/>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+
 
 		<!-- Bootstrap 4 -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-				integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+				integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 		<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 		<!-- Tether -->
@@ -29,21 +30,9 @@
 		<script type="text/javascript"
 				  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
 		<script src="js/form-validate.js"></script>
-		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-		<script src="js/recaptcha.js"></script>
+		<script src="https://www.google.com/recaptcha/api.js"></script>
 
 
-		<!-- Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Playball|Roboto:400,400i,700,700i" rel="stylesheet"/>
-		<link type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-				rel="stylesheet">
-
-		<!-- My JS -->
-		<script type="text/javascript" src="js/onepagescroll.js"></script>
-
-		<!-- My CSS -->
-		<link href="css/onepage-scroll.css" rel="stylesheet" type="text/css">
-		<link href="css/style.css" rel="stylesheet" type="text/css">
 
 		<!-- HTML5 shim and Respond . js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond . js doesn't work if you view the page via file:// -->
@@ -52,171 +41,181 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
+
+		<!-- My JS -->
+		<script type="text/javascript" src="js/onepagescroll.js"></script>
+		<!-- My CSS -->
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Playball|Roboto:400,400i,700,700i" rel="stylesheet"/>
+		<link type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+				rel="stylesheet">
+
+
 		<title>steven hebert</title>
 	</head>
 
 	<body>
-		<div class="wrapper">
-			<div class="main">
+		<div class="main">
 
-				<section id="home" class="page1">
-					<div class="page_container">
-						<div class="jumbotron">
-							<h1 class="display-3">Steven Hebert</h1>
-							<p class="lead">Economist, Software Developer</p>
-							<p>
-						</div>
+			<section id="home" class="page1">
+				<div class="page_container">
+					<div class="jumbotron">
+						<h1 class="display-3">Steven Hebert</h1>
+						<p class="lead">Economist, Software Developer</p>
+						<p>
 					</div>
-				</section>
+				</div>
+			</section>
 
-				<section id="portfolio" class="page2">
+			<section id="portfolio" class="page2">
 
-					<div class="container">
-						<h1>portfolio</h1>
-						<div class="card-deck">
-							<div class="card">
-								<img class="card-img-top img-fluid" src="docs/card1.png" alt="Albuquerque Town Hall">
-								<div class="card-block">
-									<p class="card-text">
-										<small class="text-muted">
-											<a href="https://ABQTownHall.com">ABQ Town Hall</a>
-										</small>
-										is a web application I created with my Deep Dive capstone team. In
-										addition to an open forum, it utilizes ABQ Open GIS data to help inform and engage
-										Albuquerque residents.
-									</p>
-								</div>
-							</div>
-
-							<div class="card">
-								<img class="card-img-top img-fluid" src="docs/card2.png" alt="Synthetic Control Model">
-								<div class="card-block">
-									<p class="card-text">This is an econometric exercise researching recidivism rates after a
-										major policy change in Portugal. I used a synthetic control method to estimate a control
-										consisting of 19 similar countries.
-									</p>
-									<p>
-										<small class="text-muted">
-											<a href="docs/portgualSynth.do"> .do file</a>
-										</small>
-										,
-										<small class="text-muted">
-											<a href="docs/Port.dta"> data file</a>
-										</small>
-									</p>
-								</div>
+				<div class="container">
+					<h1>portfolio</h1>
+					<div class="card-deck">
+						<div class="card">
+							<img class="card-img-top img-fluid" src="docs/card1.png" alt="Albuquerque Town Hall">
+							<div class="card-block">
+								<p class="card-text">
+									<small class="text-muted">
+										<a href="https://ABQTownHall.com" target="_blank">ABQ Town Hall</a>
+									</small>
+									is a web application I created with my Deep Dive capstone team. In
+									addition to an open forum, it utilizes ABQ Open GIS data to help inform and engage
+									Albuquerque residents.
+								</p>
 							</div>
 						</div>
 
-						<div class="card-deck">
-							<div class="card">
-								<img class="card-img-top img-fluid" src="docs/card3.png" alt="Star Wars themed webpage">
-								<div class="card-block">
-									<p class="card-text">An alternative pwp in progress. Uses only CSS to achieve a parallax effect and
-										is modeled after one American epic space opera.</p>
-									<p>
-										<small class="text-muted">
-											<a href="https://stevenhebert.net/public_html/indexx.php">on website not that far, far away...</a>
-										</small>
-									</p>
-								</div>
+						<div class="card">
+							<img class="card-img-top img-fluid" src="docs/card2.png" alt="Synthetic Control Model">
+							<div class="card-block">
+								<p class="card-text">This is an econometric exercise researching recidivism rates after a
+									major policy change in Portugal. I used a synthetic control method to estimate a control
+									consisting of 19 similar countries.
+								</p>
+								<p>
+									<small class="text-muted">
+										<a href="docs/portgualSynth.do"> .do file</a>
+									</small>
+									,
+									<small class="text-muted">
+										<a href="docs/Port.dta"> data file</a>
+									</small>
+								</p>
 							</div>
+						</div>
+					</div>
 
-							<div class="card">
-								<img class="card-img-top img-fluid" src="docs/card2.png" alt="">
-								<div class="card-block"> Put dynamic optimization, optimal control project here, or
-									php todo list here.
-									<p class="card-text"></p>
-								</div>
+					<div class="card-deck">
+						<div class="card">
+							<img class="card-img-top img-fluid" src="docs/card3.png" alt="Star Wars themed webpage">
+							<div class="card-block">
+								<p class="card-text">An alternative pwp in progress. Uses only CSS to achieve a parallax
+									effect and is modeled after one American epic space opera.</p>
+								<p>
+									<small class="text-muted">
+										<a href="https://stevenhebert.net/public_html/indexx.php" target="_blank">on website
+											not that far, far
+											away...</a>
+									</small>
+								</p>
 							</div>
 						</div>
 
+						<div class="card">
+							<img class="card-img-top img-fluid" src="docs/card2.png" alt="">
+							<div class="card-block"> Put dynamic optimization, optimal control project here, or
+								php todo list here.
+								<p class="card-text"></p>
+							</div>
+						</div>
 					</div>
 
-				</section>
+				</div>
+
+			</section>
 
 
-				<section id="contact" class="page3">
-					<div class="container">
-						<h1>contact</h1>
+			<section id="contact" class="page3">
+				<div class="container">
+					<h1>contact</h1>
 
-						<form id="contact-form" action="php/mailer.php" method="POST">
+					<form id="contact-form" action="php/mailer.php" method="post">
 
-							<div class="form-group row">
-								<label for="name" class="col-xs-1 col-form-label"></label>
-								<div class="input-group col-xs">
-									<div class="input-group-addon">
-										<i class="fa fa-user fa-fw" aria-hidden="true"></i>
-									</div>
-									<input type="text" class="form-control" id="name" name="name" placeholder="name">
+						<div class="form-group row">
+							<label for="name" class="col-form-label"></label>
+							<div class="input-group col-sm">
+								<div class="input-group-addon">
+									<i class="fa fa-user fa-fw" aria-hidden="true"></i>
 								</div>
+								<input type="text" class="form-control" id="name" name="name" placeholder="name">
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label for="email" class="col-form-label"></label>
+							<div class="input-group col-sm">
+								<div class="input-group-addon">
+									<i class="fa fa-envelope fa-fw" aria-hidden="true"></i>
+								</div>
+								<input type="email" class="form-control" id="email" name="email" placeholder="email">
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label for="subject" class="col-form-label"></label>
+							<div class="input-group col-sm">
+								<div class="input-group-addon">
+									<i class="fa fa-pencil fa-fw" aria-hidden="true"></i>
+								</div>
+								<input type="text" class="form-control" id="subject" name="subject" placeholder="subject">
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<div class="input-group col-sm-11">
+								<div class="input-group-addon">
+									<i class="fa fa-comment fa-fw" aria-hidden="true"></i>
+								</div>
+								<textarea class="form-control " rows="4" id="message" name="message"
+											 placeholder="message"></textarea>
 							</div>
 
-							<div class="form-group row">
-								<label for="email" class="col-xs-1 col-form-label"></label>
-								<div class="input-group col-xs">
-									<div class="input-group-addon">
-										<i class="fa fa-envelope fa-fw" aria-hidden="true"></i>
-									</div>
-									<input type="email" class="form-control" id="email" name="email" placeholder="email">
-								</div>
+							<div class="col-sm-1">
+								<button class="btn btn-primary btn-block" type="submit"> Send</button>
+								<button class="btn btn-secondary btn-block" type="reset"> Reset</button>
 							</div>
+							<div class="g-recaptcha" data-sitekey="6LfiyS0UAAAAAINUJI0YG4Z87VVqs_QdbaRg7EnS"></div>
+						</div>
 
-							<div class="form-group row">
-								<label for="subject" class="col-xs-1 col-form-label"></label>
-								<div class="input-group col-xs">
-									<div class="input-group-addon">
-										<i class="fa fa-pencil fa-fw" aria-hidden="true"></i>
-									</div>
-									<input type="text" class="form-control" id="subject" name="subject" placeholder="subject">
-								</div>
-							</div>
+						<div class="row">
+							<div id="output-area"></div>
+						</div>
+					</form>
+				</div>
 
-							<div class="form-group row">
-								<div class="input-group col-xs-11">
-									<div class="input-group-addon">
-										<i class="fa fa-comment fa-fw" aria-hidden="true"></i>
-									</div>
-									<textarea class="form-control " rows="4" id="message" name="message"
-												 placeholder="message"></textarea>
-								</div>
+				<footer>
+					<a href="https://github.com/stevenhebert" target="_blank">
+						<i class="fa fa-github fa-fw fa-2x" aria-hidden="true"></i>
+					</a> |
+					<a href="https://www.linkedin.com/in/hebertsteven/" target="_blank">
+						<i class="fa fa-linkedin fa-fw fa-2x" aria-hidden="true"></i>
+					</a> |
+					<a href="docs/resumeStevenHebert.pdf">
+						<i class="fa fa-file-text fa-fw fa-2x" aria-hidden="true"></i>
+					</a>
+				</footer>
+			</section>
 
-								<div class="col-xs-1">
-									<button class="btn btn-secondary g-recaptcha"
-											  data-sitekey="6LfiyS0UAAAAAINUJI0YG4Z87VVqs_QdbaRg7EnS"
-											  data-callback='onSubmit'>Submit
-									</button>
-									<button class="btn btn-secondary " type="reset"> Reset</button>
-								</div>
-							</div>
-
-							<div class="row">
-								<div id="output-area"></div>
-							</div>
-						</form>
-					</div>
-
-					<footer>
-						<a href="https://github.com/stevenhebert">
-							<i class="fa fa-github fa-fw fa-2x" aria-hidden="true"></i>
-						</a> |
-						<a href="https://linkedin.com/in/hebertsteven">
-							<i class="fa fa-linkedin fa-fw fa-2x" aria-hidden="true"></i>
-						</a> |
-						<a href="docs/resumeStevenHebert.pdf">
-							<i class="fa fa-file-text fa-fw fa-2x" aria-hidden="true"></i>
-						</a>
-					</footer>
-				</section>
-
-			</div>
 		</div>
 
 		<script>
 			onePageScroll(".main", {
 				sectionContainer: "section",
 				loop: false,
-				responsiveFallback: 768
+				responsiveFallback: 600
 			});
 		</script>
 

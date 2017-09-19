@@ -1,6 +1,6 @@
-/* -------------------------------------------------------------
+/* ===========================================================
  * onepagescroll.js v1.2.2
- *
+ * ===========================================================
  * Copyright 2014 Pete Rojwongsuriya.
  * http://www.thepetedesign.com
  *
@@ -12,21 +12,21 @@
  *
  * License: GPL v3
  *
- * -------------------------------------------------------------*/
+ * ========================================================== */
 
 function onePageScroll(element, options) {
 
 	var defaults = {
 			sectionContainer: "section",
-			easing: "easing",
-			animationTime: 600,
-			pagination: false,
+			easing: "ease",
+			animationTime: 1000,
+			pagination: true,
 			updateURL: false,
 			keyboard: true,
 			beforeMove: null,
 			afterMove: null,
 			loop: false,
-			responsiveFallback: 768
+			responsiveFallback: false
 		},
 		_root = this,
 		settings = Object.extend({}, defaults, options),
@@ -58,15 +58,6 @@ function onePageScroll(element, options) {
 			}
 		}
 
-		_swipeEvents(el);
-		document.addEventListener("swipeDown",  function(event){
-			if (!_hasClass(body, "disabled-onepage-scroll")) event.preventDefault();
-			moveUp(el);
-		});
-		document.addEventListener("swipeUp", function(event){
-			if (!_hasClass(body, "disabled-onepage-scroll")) event.preventDefault();
-			moveDown(el);
-		});
 
 		// Create Pagination and Display Them
 
@@ -167,55 +158,6 @@ function onePageScroll(element, options) {
 	/*-------------------------------------------------------*/
 	/*  Private Functions                                    */
 	/*-------------------------------------------------------*/
-	/*------------------------------------------------*/
-	/*  Credit: Eike Send for the awesome swipe event */
-	/*------------------------------------------------*/
-	_swipeEvents = function(el){
-		var startX,
-			startY;
-
-		document.addEventListener("touchstart", touchstart);
-
-		function touchstart(event) {
-			var touches = event.touches;
-			if (touches && touches.length) {
-				startX = touches[0].pageX;
-				startY = touches[0].pageY;
-				document.addEventListener("touchmove", touchmove);
-			}
-		}
-
-		function touchmove(event) {
-			var touches = event.touches;
-			if (touches && touches.length) {
-				event.preventDefault();
-				var deltaX = startX - touches[0].pageX;
-				var deltaY = startY - touches[0].pageY;
-
-				if (deltaX >= 50) {
-					var event = new Event('swipeLeft');
-					document.dispatchEvent(event);
-				}
-				if (deltaX <= -50) {
-					var event = new Event('swipeRight');
-					document.dispatchEvent(event);
-				}
-				if (deltaY >= 50) {
-					var event = new Event('swipeUp');
-					document.dispatchEvent(event);
-				}
-				if (deltaY <= -50) {
-					var event = new Event('swipeDown');
-					document.dispatchEvent(event);
-				}
-
-				if (Math.abs(deltaX) >= 50 || Math.abs(deltaY) >= 50) {
-					document.removeEventListener('touchmove', touchmove);
-				}
-			}
-		}
-
-	};
 	/*-----------------------------------------------------------*/
 	/*  Utility to add/remove class easily with javascript       */
 	/*-----------------------------------------------------------*/
@@ -312,37 +254,22 @@ function onePageScroll(element, options) {
 
 		if (document.body.clientWidth < settings.responsiveFallback) {
 
-			_addClass(body, "disabled-onepage-scroll");
+			_addClass(body);
 			document.removeEventListener('mousewheel', _mouseWheelHandler);
 			document.removeEventListener('DOMMouseScroll', _mouseWheelHandler);
-			_swipeEvents(el);
-			document.removeEventListener("swipeDown");
-			document.removeEventListener("swipeUp");
 
 		} else {
 
-			if (_hasClass(body, "disabled-onepage-scroll")) {
-				_removeClass(body, "disabled-onepage-scroll");
+			if (_hasClass(body)) {
+				_removeClass(body);
 				_scrollTo(document.documentElement, 0, 2000);
 			}
-
-
-
-			_swipeEvents(el);
-			document.addEventListener("swipeDown",  function(event){
-				if (!_hasClass(body, "disabled-onepage-scroll")) event.preventDefault();
-				moveUp(el);
-			});
-			document.addEventListener("swipeUp", function(event){
-				if (!_hasClass(body, "disabled-onepage-scroll")) event.preventDefault();
-				moveDown(el);
-			});
 
 			document.addEventListener('mousewheel', _mouseWheelHandler);
 			document.addEventListener('DOMMouseScroll', _mouseWheelHandler);
 
 		}
-	}
+	};
 
 	/*-------------------------------------------*/
 	/*  Initialize scroll detection              */
@@ -365,7 +292,7 @@ function onePageScroll(element, options) {
 		}
 
 		lastAnimation = timeNow;
-	}
+	};
 
 
 	/*-------------------------------------------------------*/
@@ -413,7 +340,7 @@ function onePageScroll(element, options) {
 			history.pushState( {}, document.title, href );
 		}
 		_transformPage(el3, settings, pos, next_index, next);
-	}
+	};
 
 	/*---------------------------------*/
 	/*  Function to move up section    */
@@ -453,7 +380,7 @@ function onePageScroll(element, options) {
 			history.pushState( {}, document.title, href );
 		}
 		_transformPage(el4, settings, pos, next_index, next);
-	}
+	};
 
 	/*-------------------------------------------*/
 	/*  Function to move to specified section    */
@@ -484,14 +411,10 @@ function onePageScroll(element, options) {
 			}
 			_transformPage(el5, settings, pos, page_index, next);
 		}
-	}
+	};
 
 	this.init();
 }
-
-/*------------------------------------------------*/
-/*  Ulitilities Method                            */
-/*------------------------------------------------*/
 
 /*-----------------------------------------------------------*/
 /*  Function by John Resig to replicate extend functionality */

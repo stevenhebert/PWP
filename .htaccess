@@ -3,3 +3,7 @@ RewriteCond %{HTTP_HOST} ^stevenhebert.net$ [NC,OR]
 RewriteCond %{HTTP_HOST} ^www.stevenhebert.net$
 RewriteCond %{REQUEST_URI} !public_html/
 RewriteRule (.*) /public_html/$1 [L]
+
+# this forces SSL connection
+RewriteCond %{HTTPS} !=on
+RewriteRule (.*) https://stevenhebert.net/$1 [L]

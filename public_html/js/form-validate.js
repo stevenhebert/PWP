@@ -28,15 +28,15 @@ $(document).ready(function(){
 		// error messages to display to the end user
 		messages: {
 			name: {
-				required: "Name field cannot be left blank"
+				required: "Please enter your name."
 			},
 			email: {
-				email: "Email field cannot be left blank",
-				required: "Not recognized as a valid email"
+				email: "Please enter a valid email address.",
+				required: "Please enter a valid email address."
 			},
 			message: {
-				required: "Message field cannot be left blank",
-				maxlength: "Your message exceeds 2000 characters"
+				required: "Please enter a message.",
+				maxlength: "2000 characters max."
 			}
 		},
 
@@ -60,6 +60,6 @@ $(document).ready(function(){
 			})
 		}
 
-	});
+	});/* end validate function */
 
-});
+});/*end document.ready()*/
