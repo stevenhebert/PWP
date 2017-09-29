@@ -33,7 +33,6 @@
 		<script src="https://www.google.com/recaptcha/api.js"></script>
 
 
-
 		<!-- HTML5 shim and Respond . js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond . js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -79,11 +78,13 @@
 							<div class="card-block">
 								<p class="card-text">
 									<small class="text-muted">
-										<a href="https://ABQTownHall.com" target="_blank">ABQ Town Hall</a>
+										<a href="https://abqtownhall.com" target="_blank">ABQ
+											Town Hall</a>
 									</small>
-									is a web application I created with my Deep Dive capstone team. In
-									addition to an open forum, it utilizes ABQ Open GIS data to help inform and engage
-									Albuquerque residents.
+									a web application I created with my Deep Dive capstone team. In addition to an open forum, it
+									utilizes ABQ Open GIS data to help inform and engage Albuquerque residents. Normally a
+									functional prototype but we are still actively developing this application; there may be
+									bugs.
 								</p>
 							</div>
 						</div>
@@ -110,24 +111,26 @@
 
 					<div class="card-deck">
 						<div class="card">
-							<img class="card-img-top img-fluid" src="docs/card3.png" alt="Star Wars themed webpage">
+							<img class="card-img-top img-fluid" src="docs/card3.png" alt="notpwp">
 							<div class="card-block">
-								<p class="card-text">An alternative pwp in progress. Uses only CSS to achieve a parallax
-									effect and is modeled after one American epic space opera.</p>
+								<p class="card-text">A frontend exercise that achieves a parallax effect using effect using only
+									CSS.
+									This is a testing-sandbox, not a finished product.
+								</p>
 								<p>
 									<small class="text-muted">
-										<a href="https://stevenhebert.net/public_html/indexx.php" target="_blank">on website
-											not that far, far
-											away...</a>
+										<a href="https://stevenhebert.net/public_html/indexx.php" target="_blank">on website not
+											that far, faraway...</a>
 									</small>
 								</p>
 							</div>
 						</div>
 
 						<div class="card">
-							<img class="card-img-top img-fluid" src="docs/card2.png" alt="">
-							<div class="card-block"> Put dynamic optimization, optimal control project here, or
-								php todo list here.
+							<img class="card-img-top img-fluid" src="docs/card4.png" alt="">
+							<div class="card-block"> This is a species-habitat optimal control model of the Annapurna
+								ecosystem. It finds a dynamically optimal level of ecotourism constrained by a two-trophic level
+								ecosystem for each point in continuous time.
 								<p class="card-text"></p>
 							</div>
 						</div>
@@ -142,7 +145,7 @@
 				<div class="container">
 					<h1>contact</h1>
 
-					<form id="contact-form" action="php/mailer.php" method="post">
+					<form id="contact-form" action="php/mailer.php" method="POST">
 
 						<div class="form-group row">
 							<label for="name" class="col-form-label"></label>
@@ -187,13 +190,21 @@
 								<button class="btn btn-primary btn-block" type="submit"> Send</button>
 								<button class="btn btn-secondary btn-block" type="reset"> Reset</button>
 							</div>
-							<div class="g-recaptcha" data-sitekey="6LfiyS0UAAAAAINUJI0YG4Z87VVqs_QdbaRg7EnS"></div>
 						</div>
 
 						<div class="row">
-							<div id="output-area"></div>
+							<div class="col-lg-12 text-center">
+								<div id="output-area"></div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-12 text-center">
+								<div class="g-recaptcha" data-sitekey="6LfiyS0UAAAAAINUJI0YG4Z87VVqs_QdbaRg7EnS"></div>
+							</div>
 						</div>
 					</form>
+
 				</div>
 
 				<footer>

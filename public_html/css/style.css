@@ -87,6 +87,10 @@ h1 {
 	color: #00ced1;
 }
 
+.g-recaptcha {
+	display: inline-block;
+}
+
 /* footer
 -------------------------------------------------- */
 footer {
