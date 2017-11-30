@@ -214,7 +214,7 @@
 					<a href="https://www.linkedin.com/in/hebertsteven/" target="_blank">
 						<i class="fa fa-linkedin fa-fw fa-2x" aria-hidden="true"></i>
 					</a> |
-					<a href="docs/resumeStevenHebert.pdf">
+					<a href="docs/steven-hebert-resume.pdf">
 						<i class="fa fa-file-text fa-fw fa-2x" aria-hidden="true"></i>
 					</a>
 				</footer>
